@@ -29,6 +29,7 @@ main {
   color: white;
   height: 100vh;
   overflow-y: auto;
+  /* margin-top: 5rem; */
 }
 
 .top_section {

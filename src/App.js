@@ -13,11 +13,15 @@ import Footer from "./components/Footer/Footer";
 import Reportschemical from "./pages/Reports/Reportchemical/Reportschemical";
 import Reportstore from "./pages/Reports/Reportstore/Reportstore";
 import Reportsproduct from "./pages/Reports/Reportsproduct/Reportsproduct";
+import Navigationbar from "./components/Navbar/Navigationbar";
 
 function App() {
   return (
     <>
-      <h3>Navbar</h3>
+      <Navigationbar />
+      <br />
+      <br />
+      <br />
       <div className="App">
         <div className="Sidebarr">
           <Sidebar />

@@ -1,0 +1,19 @@
+nav {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10rem;
+  z-index: 1;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: inline;
+  margin: 0 1rem;
+  /* color: rgb(0, 0, 0); */
+}

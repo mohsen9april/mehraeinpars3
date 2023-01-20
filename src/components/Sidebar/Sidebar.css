@@ -1,0 +1,49 @@
+.sidebar {
+  position: sticky;
+  margin-right: 1rem;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  /* align-items: center; */
+  justify-content: flex-start;
+  /* padding: 15px;
+    margin: 10px; */
+  background: #f8f8ff;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(5.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
+  /* background: rgb(0, 7, 61); */
+  /* color: white; */
+  /* height: 100vh; */
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.link {
+  display: flex;
+  /* color: white; */
+  color: black;
+  gap: 10px;
+  padding: 5px 10px;
+  border-right: 4px solid transparent;
+  transition: 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+.link:hover {
+  /* border-right: 4px solid white; */
+  border-radius: 0.5rem;
+  background: rgb(206, 213, 251);
+  transition: 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
+.active {
+  /* border-radius: 4px solid white; */
+  border-radius: 0.5rem;
+  background: rgb(206, 213, 251);
+}
+.link_text {
+  white-space: nowrap;
+  font-size: 15px;
+}
