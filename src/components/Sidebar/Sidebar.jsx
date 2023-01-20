@@ -39,51 +39,51 @@ const routes = [
     ],
   },
   {
-    path: "/users",
+    path: "/products",
     name: "محصولات",
     icon: <FaUser />,
     subRoutes: [
       {
-        path: "/settings/profile",
+        path: "/products/testliner",
         name: "تست لاینر  ",
         icon: <FaUser />,
       },
       {
-        path: "/settings/2fa",
+        path: "/products/fluting",
         name: "فلوتینگ ",
         icon: <FaLock />,
       },
       {
-        path: "/settings/billing",
+        path: "/products/liner",
         name: "لاینر ",
         icon: <FaMoneyBill />,
       },
     ],
   },
   {
-    path: "/file-manager",
+    path: "/Commercial-Department",
     name: "واحد بازرگانی",
     icon: <AiTwotoneFileExclamation />,
     subRoutes: [
       {
-        path: "/settings/profile",
+        path: "/Commercial-Department/Sales",
         name: "فروش محصولات ",
         icon: <FaUser />,
       },
       {
-        path: "/settings/2fa",
+        path: "/Commercial-Department/Buy",
         name: "تامین آخال",
         icon: <FaLock />,
       },
       {
-        path: "/settings/billing",
+        path: "/Commercial-Department/supply",
         name: "تامین تجهیزات",
         icon: <FaMoneyBill />,
       },
     ],
   },
   {
-    path: "/order",
+    path: "/Qulitycontrol",
     name: "واحد کنترل کیفیت",
     icon: <BsCartCheck />,
   },

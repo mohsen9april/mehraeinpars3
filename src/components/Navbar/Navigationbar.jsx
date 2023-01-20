@@ -7,7 +7,7 @@ import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import EmailIcon from "@mui/icons-material/Email";
 
 const Navigationbar = () => {
-  const [navSize, setnavSize] = useState("10rem");
+  const [navSize, setnavSize] = useState("4rem");
   const [navColor, setnavColor] = useState("transparent");
   const [navLinkColor, setnavLinkColor] = useState("#000000");
   const listenScrollEvent = () => {

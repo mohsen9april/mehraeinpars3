@@ -119,14 +119,6 @@ const Home = () => {
 
   return (
     <div className="home_container">
-      {/* <div className="header_Dashboard">
-        <div className="left_header_dashboard">
-          <h1>کاغذ سازی مهر آیین پارس</h1>
-        </div>
-        <div className="right_header_dashboard">
-          <span></span>
-        </div>
-      </div> */}
       <div className="video_top">
         <video loop autoPlay>
           <source src="./images/video.mp4" type="video/mp4" />

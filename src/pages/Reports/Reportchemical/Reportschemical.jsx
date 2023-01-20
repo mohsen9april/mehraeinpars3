@@ -5,10 +5,12 @@ import "./Reportchemical.css";
 const Reportschemical = () => {
   return (
     <>
-      <h1>pie charts</h1>
-      <div className="piechartschemical_container">
-        <div className="piechart_container">
-          <Piecharts />
+      <div className="Reportschemical_container">
+        <h1>pie charts</h1>
+        <div>
+          <div className="piechart_container">
+            <Piecharts />
+          </div>
         </div>
       </div>
     </>
