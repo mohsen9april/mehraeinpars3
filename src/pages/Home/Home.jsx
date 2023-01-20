@@ -118,7 +118,7 @@ const Home = () => {
   }, []);
 
   return (
-    <div>
+    <div className="home_container">
       {/* <div className="header_Dashboard">
         <div className="left_header_dashboard">
           <h1>کاغذ سازی مهر آیین پارس</h1>

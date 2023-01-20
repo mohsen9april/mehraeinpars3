@@ -1,7 +1,7 @@
 .sidebar {
   position: sticky;
   margin-right: 1rem;
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -9,7 +9,8 @@
   justify-content: flex-start;
   /* padding: 15px;
     margin: 10px; */
-  background: #f8f8ff;
+  /* background: #f8f8ff; */
+  background: #3e3e42;
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(5.5px);
   border-radius: 10px;

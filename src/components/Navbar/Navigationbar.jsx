@@ -1,6 +1,10 @@
 import React from "react";
 import "./Navigationbar.css";
 import { useState, useEffect } from "react";
+import PublicIcon from "@mui/icons-material/Public";
+import DarkModeIcon from "@mui/icons-material/DarkMode";
+import AccountCircleIcon from "@mui/icons-material/AccountCircle";
+import EmailIcon from "@mui/icons-material/Email";
 
 const Navigationbar = () => {
   const [navSize, setnavSize] = useState("10rem");
@@ -27,7 +31,19 @@ const Navigationbar = () => {
           transition: "all 1s",
         }}
       >
-        <h2>کاغذ سازی مهر آیین پارس</h2>
+        <div className="navbar_container">
+          <div className="left_navbar">
+            <AccountCircleIcon />
+            <EmailIcon />
+            <PublicIcon />
+          </div>
+          <div>
+            <DarkModeIcon />
+          </div>
+          <div className="right_navbar">
+            <h2>کاغذ سازی مهر آیین پارس</h2>
+          </div>
+        </div>
       </nav>
     </div>
   );
