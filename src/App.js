@@ -3,12 +3,12 @@ import { Route, Routes } from "react-router-dom";
 import Users from "./pages/Users";
 import Messages from "./pages/Messages";
 import FileManager from "./pages/FileManager";
-import Analytics from "./pages/Analytics";
 import Order from "./pages/Order";
 import Saved from "./pages/Saved";
 import Setting from "./pages/Setting";
 import Sidebar from "./components/Sidebar/Sidebar";
 import Home from "./pages/Home/Home";
+import Newline from "./pages/Newline/Newline";
 
 function App() {
   return (
@@ -23,7 +23,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/users" element={<Users />} />
           <Route path="/messages" element={<Messages />} />
-          <Route path="/analytics" element={<Analytics />} />
+          <Route path="/analytics" element={<Newline />} />
           <Route path="/file-manager" element={<FileManager />} />
           <Route path="/order" element={<Order />} />
           <Route path="/saved" element={<Saved />} />

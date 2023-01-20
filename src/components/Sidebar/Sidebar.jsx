@@ -12,7 +12,7 @@ import SidebarMenu from "../Sidebar/SidebarMenu";
 const routes = [
   {
     path: "/",
-    name: "Home",
+    name: "صفحه اصلی",
     icon: <FaHome />,
   },
   {
@@ -27,7 +27,7 @@ const routes = [
   },
   {
     path: "/analytics",
-    name: "Analytics",
+    name: "خط جدید",
     icon: <BiAnalyse />,
   },
   {

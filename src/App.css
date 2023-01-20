@@ -5,7 +5,7 @@
 }
 
 .App {
-  background-color: lightgray;
+  /* background-color: lightgray; */
   display: flex;
   direction: rtl;
 }
