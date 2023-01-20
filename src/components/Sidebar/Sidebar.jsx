@@ -12,7 +12,7 @@ import SidebarMenu from "../Sidebar/SidebarMenu";
 const routes = [
   {
     path: "/",
-    name: "Dashboard",
+    name: "Home",
     icon: <FaHome />,
   },
   {
@@ -89,22 +89,6 @@ const routes = [
 const Sidebar = ({ children }) => {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
-  // const inputAnimation = {
-  //   hidden: {
-  //     width: 0,
-  //     padding: 0,
-  //     transition: {
-  //       duration: 0.2,
-  //     },
-  //   },
-  //   show: {
-  //     width: "140px",
-  //     padding: "5px 15px",
-  //     transition: {
-  //       duration: 0.2,
-  //     },
-  //   },
-  // };
 
   const showAnimation = {
     hidden: {
