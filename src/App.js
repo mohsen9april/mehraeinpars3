@@ -9,6 +9,7 @@ import Setting from "./pages/Setting";
 import Sidebar from "./components/Sidebar/Sidebar";
 import Home from "./pages/Home/Home";
 import Newline from "./pages/Newline/Newline";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -32,7 +33,7 @@ function App() {
           <Route path="*" element={<> not found</>} />
         </Routes>
       </div>
-      <h3>Footer</h3>
+      <Footer />
     </>
   );
 }
