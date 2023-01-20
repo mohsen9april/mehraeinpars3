@@ -16,73 +16,114 @@ const routes = [
     icon: <FaHome />,
   },
   {
-    path: "/users",
-    name: "Users",
+    path: "/reports",
+    name: "گزارشات",
     icon: <FaUser />,
+    subRoutes: [
+      {
+        path: "/reports/products",
+        name: "  تولید",
+        icon: <FaUser />,
+      },
+      {
+        path: "/reports/chemicals",
+        name: "مصرف مواد شیمیایی ",
+        icon: <FaLock />,
+      },
+      {
+        path: "/reports/store",
+        name: "موجودی انبار ",
+        icon: <FaMoneyBill />,
+      },
+    ],
   },
   {
-    path: "/messages",
-    name: "Messages",
-    icon: <MdMessage />,
-  },
-  {
-    path: "/analytics",
-    name: "خط جدید",
-    icon: <BiAnalyse />,
-  },
-  {
-    path: "/file-manager",
-    name: "File Manager",
-    icon: <AiTwotoneFileExclamation />,
+    path: "/users",
+    name: "محصولات",
+    icon: <FaUser />,
     subRoutes: [
       {
         path: "/settings/profile",
-        name: "Profile ",
+        name: "تست لاینر  ",
         icon: <FaUser />,
       },
       {
         path: "/settings/2fa",
-        name: "2FA",
+        name: "فلوتینگ ",
         icon: <FaLock />,
       },
       {
         path: "/settings/billing",
-        name: "Billing",
+        name: "لاینر ",
+        icon: <FaMoneyBill />,
+      },
+    ],
+  },
+  {
+    path: "/file-manager",
+    name: "واحد بازرگانی",
+    icon: <AiTwotoneFileExclamation />,
+    subRoutes: [
+      {
+        path: "/settings/profile",
+        name: "فروش محصولات ",
+        icon: <FaUser />,
+      },
+      {
+        path: "/settings/2fa",
+        name: "تامین آخال",
+        icon: <FaLock />,
+      },
+      {
+        path: "/settings/billing",
+        name: "تامین تجهیزات",
         icon: <FaMoneyBill />,
       },
     ],
   },
   {
     path: "/order",
-    name: "Order",
+    name: "واحد کنترل کیفیت",
     icon: <BsCartCheck />,
   },
   {
+    path: "/messages",
+    name: "گالری",
+    icon: <MdMessage />,
+  },
+
+  {
+    path: "/analytics",
+    name: "خط جدید",
+    icon: <BiAnalyse />,
+  },
+
+  {
     path: "/settings",
-    name: "Settings",
+    name: "تماس با ما",
     icon: <BiCog />,
     exact: true,
     subRoutes: [
       {
         path: "/settings/profile",
-        name: "Profile ",
+        name: "ارتباط با مدیریت  ",
         icon: <FaUser />,
       },
       {
         path: "/settings/2fa",
-        name: "2FA",
+        name: "فرم استخدام",
         icon: <FaLock />,
       },
       {
         path: "/settings/billing",
-        name: "Billing",
+        name: "اطلاعات تماس",
         icon: <FaMoneyBill />,
       },
     ],
   },
   {
     path: "/saved",
-    name: "Saved",
+    name: "درباره ما",
     icon: <AiFillHeart />,
   },
 ];

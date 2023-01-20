@@ -1,0 +1,12 @@
+.piechartschemical_container {
+  background-color: brown;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  direction: ltr;
+}
+
+.piechart_container {
+  background-color: aqua;
+  width: 90%;
+}
