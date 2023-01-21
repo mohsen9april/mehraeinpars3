@@ -1,0 +1,18 @@
+.aboutus_container {
+  direction: ltr;
+}
+
+.video_top_aboutus {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  text-align: center;
+}
+
+.video_top_aboutus video {
+  width: 98%;
+  height: auto;
+  border-radius: 2rem;
+}

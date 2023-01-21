@@ -123,7 +123,7 @@ const routes = [
     ],
   },
   {
-    path: "/saved",
+    path: "/Aboutus",
     name: "درباره ما",
     icon: <AiFillHeart />,
   },

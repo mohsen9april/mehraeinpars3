@@ -215,6 +215,24 @@ const Home = () => {
       <br />
       <h1> Who We Are </h1>
       <img style={{ display: "flex", margin: "auto" }} src="./images/image2.png" alt="/" />
+      <h1>why choose us</h1>
+      <img
+        style={{ display: "flex", margin: "auto", width: "70rem" }}
+        src="./images/Whychooseus.png"
+        alt="/"
+      />
+      <h1>about us </h1>
+      <img
+        style={{ display: "flex", margin: "auto", width: "70rem" }}
+        src="./images/Aboutushome.png"
+        alt="/"
+      />
+      <h1>workshop </h1>
+      <img
+        style={{ display: "flex", margin: "auto", width: "70rem" }}
+        src="./images/Workshop.png"
+        alt="/"
+      />
     </div>
   );
 };
