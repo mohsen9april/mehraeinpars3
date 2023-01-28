@@ -17,28 +17,6 @@ const routes = [
     icon: <FaHome />,
   },
   {
-    path: "/reports",
-    name: "گزارشات",
-    icon: <FaUser />,
-    subRoutes: [
-      {
-        path: "/reports/products",
-        name: "  تولید",
-        icon: <FaUser />,
-      },
-      {
-        path: "/reports/chemicals",
-        name: "مصرف مواد شیمیایی ",
-        icon: <FaLock />,
-      },
-      {
-        path: "/reports/store",
-        name: "موجودی انبار ",
-        icon: <FaMoneyBill />,
-      },
-    ],
-  },
-  {
     path: "/products",
     name: "محصولات",
     icon: <FaUser />,
@@ -149,12 +127,26 @@ const Sidebar = () => {
     },
   };
 
+  const handleMouseEnter = () => {
+    // setIsHover(true);
+    setIsOpen(!isOpen);
+  };
+
+  const handleMouseLeave = () => {
+    // setIsHover(false);
+    setIsOpen(!isOpen);
+  };
+
   return (
     <>
-      <div className="main-container">
+      <div
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+        className="main-container"
+      >
         <motion.div
           animate={{
-            width: isOpen ? "200px" : "45px",
+            width: isOpen ? "160px" : "50px",
 
             transition: {
               duration: 0.5,
