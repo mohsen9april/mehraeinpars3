@@ -7,13 +7,13 @@ import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import EmailIcon from "@mui/icons-material/Email";
 
 const Navigationbar = () => {
-  const [navSize, setnavSize] = useState("4rem");
+  const [navSize, setnavSize] = useState("45px");
   const [navColor, setnavColor] = useState("transparent");
   const [navLinkColor, setnavLinkColor] = useState("#000000");
   const listenScrollEvent = () => {
     window.scrollY > 10 ? setnavColor("#252734") : setnavColor("transparent");
     window.scrollY > 10 ? setnavLinkColor("#ffffff") : setnavLinkColor("#000000");
-    window.scrollY > 10 ? setnavSize("5rem") : setnavSize("4rem");
+    window.scrollY > 10 ? setnavSize("56px") : setnavSize("45px");
   };
   useEffect(() => {
     window.addEventListener("scroll", listenScrollEvent);

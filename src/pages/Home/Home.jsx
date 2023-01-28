@@ -130,17 +130,7 @@ const Home = () => {
 
       <section className="aboutHome">
         <div className="about_container">
-          <div
-            className="left row"
-            // data-aos="fade-up-right"
-            // data-aos-offset="200"
-            // data-aos-delay="30"
-            // data-aos-duration="500"
-            // data-aos-easing="ease-in-out"
-            // data-aos-mirror="true"
-            // data-aos-once="false"
-            // data-aos-anchor-placement="top-center"
-          >
+          <div className="left row">
             <div>
               <img src="./images/about.webp" alt="/" />
             </div>

@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { FaBars, FaHome, FaLock, FaMoneyBill, FaUser } from "react-icons/fa";
+import DashboardIcon from "@mui/icons-material/Dashboard";
 import { MdMessage } from "react-icons/md";
 import { BiAnalyse } from "react-icons/bi";
 import { BiCog } from "react-icons/bi";
@@ -8,18 +9,26 @@ import { BsCartCheck } from "react-icons/bs";
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import SidebarMenu from "../Sidebar/SidebarMenu";
+import ProductionQuantityLimitsIcon from "@mui/icons-material/ProductionQuantityLimits";
+import AttachMoneyIcon from "@mui/icons-material/AttachMoney";
+import LibraryAddCheckIcon from "@mui/icons-material/LibraryAddCheck";
+import PhotoLibraryIcon from "@mui/icons-material/PhotoLibrary";
+import InfoIcon from "@mui/icons-material/Info";
+import AddIcCallIcon from "@mui/icons-material/AddIcCall";
+import TroubleshootIcon from "@mui/icons-material/Troubleshoot";
+import AccountTreeIcon from "@mui/icons-material/AccountTree";
 import "./Sidebar.css";
 
 const routes = [
   {
     path: "/",
     name: "صفحه اصلی",
-    icon: <FaHome />,
+    icon: <DashboardIcon />,
   },
   {
     path: "/products",
     name: "محصولات",
-    icon: <FaUser />,
+    icon: <ProductionQuantityLimitsIcon />,
     subRoutes: [
       {
         path: "/products/testliner",
@@ -41,7 +50,7 @@ const routes = [
   {
     path: "/Commercial-Department",
     name: "واحد بازرگانی",
-    icon: <AiTwotoneFileExclamation />,
+    icon: <AttachMoneyIcon />,
     subRoutes: [
       {
         path: "/Commercial-Department/Sales",
@@ -63,24 +72,24 @@ const routes = [
   {
     path: "/Qulitycontrol",
     name: "واحد کنترل کیفیت",
-    icon: <BsCartCheck />,
+    icon: <TroubleshootIcon />,
   },
   {
     path: "/messages",
     name: "گالری",
-    icon: <MdMessage />,
+    icon: <PhotoLibraryIcon />,
   },
 
   {
     path: "/analytics",
     name: "خط جدید",
-    icon: <BiAnalyse />,
+    icon: <AccountTreeIcon />,
   },
 
   {
     path: "/settings",
     name: "تماس با ما",
-    icon: <BiCog />,
+    icon: <AddIcCallIcon />,
     exact: true,
     subRoutes: [
       {
@@ -103,7 +112,7 @@ const routes = [
   {
     path: "/Aboutus",
     name: "درباره ما",
-    icon: <AiFillHeart />,
+    icon: <InfoIcon />,
   },
 ];
 const Sidebar = () => {
@@ -128,13 +137,11 @@ const Sidebar = () => {
   };
 
   const handleMouseEnter = () => {
-    // setIsHover(true);
-    setIsOpen(!isOpen);
+    toggle();
   };
 
   const handleMouseLeave = () => {
-    // setIsHover(false);
-    setIsOpen(!isOpen);
+    toggle();
   };
 
   return (
@@ -147,7 +154,6 @@ const Sidebar = () => {
         <motion.div
           animate={{
             width: isOpen ? "160px" : "50px",
-
             transition: {
               duration: 0.5,
               type: "spring",
@@ -156,11 +162,11 @@ const Sidebar = () => {
           }}
           className={`sidebar `}
         >
-          <div className="top_section">
+          {/* <div className="top_section">
             <div className="bars">
               <FaBars onClick={toggle} />
             </div>
-          </div>
+          </div> */}
 
           <section className="routes">
             {routes.map((route, index) => {

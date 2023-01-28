@@ -21,26 +21,28 @@ function App() {
       <br />
       <br />
       <br />
+
       <div className="App">
         <div className="Sidebarr">
           <Sidebar />
         </div>
-
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/reports/products" element={<Reportsproduct />} />
-          <Route path="/reports/chemicals" element={<Reportschemical />} />
-          <Route path="/reports/store" element={<Reportstore />} />
-          <Route path="/messages" element={<Messages />} />
-          <Route path="/analytics" element={<Newline />} />
-          <Route path="/file-manager" element={<FileManager />} />
-          <Route path="/order" element={<Order />} />
-          <Route path="/Aboutus" element={<Aboutus />} />
-          <Route path="/settings" element={<Setting />} />
-
-          <Route path="*" element={<> not found</>} />
-        </Routes>
+        <div className="mainPages">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/reports/products" element={<Reportsproduct />} />
+            <Route path="/reports/chemicals" element={<Reportschemical />} />
+            <Route path="/reports/store" element={<Reportstore />} />
+            <Route path="/messages" element={<Messages />} />
+            <Route path="/analytics" element={<Newline />} />
+            <Route path="/file-manager" element={<FileManager />} />
+            <Route path="/order" element={<Order />} />
+            <Route path="/Aboutus" element={<Aboutus />} />
+            <Route path="/settings" element={<Setting />} />
+            <Route path="*" element={<> not found</>} />
+          </Routes>
+        </div>
       </div>
+
       <Footer />
     </>
   );

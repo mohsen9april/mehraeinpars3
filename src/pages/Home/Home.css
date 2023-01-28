@@ -19,27 +19,6 @@
   /* margin: 0 30px; */
 }
 
-.left_header_dashboard {
-  text-align: center;
-  width: 100%;
-}
-
-.right_header_dashboard {
-  background-color: #1eb2a6;
-  right: 0;
-  padding: 40px 70px;
-  color: #fff;
-  clip-path: polygon(10% 0%, 100% 0, 100% 100%, 0% 100%);
-}
-
-.start {
-  background-color: #1eb2a6;
-  right: 0;
-  padding: 30px 0px;
-  color: #fff;
-  clip-path: polygon(10% 0%, 100% 0, 100% 100%, 0% 100%);
-}
-
 .video_top {
   padding-top: 1rem;
   padding-bottom: 1rem;
