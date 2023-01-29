@@ -13,7 +13,7 @@ const Navigationbar = () => {
   const listenScrollEvent = () => {
     window.scrollY > 10 ? setnavColor("#252734") : setnavColor("transparent");
     window.scrollY > 10 ? setnavLinkColor("#ffffff") : setnavLinkColor("#000000");
-    window.scrollY > 10 ? setnavSize("56px") : setnavSize("45px");
+    window.scrollY > 10 ? setnavSize("62px") : setnavSize("45px");
   };
   useEffect(() => {
     window.addEventListener("scroll", listenScrollEvent);
@@ -33,15 +33,14 @@ const Navigationbar = () => {
       >
         <div className="navbar_container">
           <div className="left_navbar">
+            <DarkModeIcon />
             <AccountCircleIcon />
             <EmailIcon />
             <PublicIcon />
           </div>
-          <div>
-            <DarkModeIcon />
-          </div>
           <div className="right_navbar">
             <h2>کاغذ سازی مهر آیین پارس</h2>
+            <img src="./images/logo.png" alt="/" />
           </div>
         </div>
       </nav>

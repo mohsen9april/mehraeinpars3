@@ -21,12 +21,13 @@ function App() {
       <br />
       <br />
       <br />
-
+      <hr />
       <div className="App">
         <div className="Sidebarr">
           <Sidebar />
         </div>
-        <div className="mainPages">
+
+        <div>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/reports/products" element={<Reportsproduct />} />

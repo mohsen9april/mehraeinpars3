@@ -1,22 +1,17 @@
 .home_container {
   direction: ltr;
-  background: #f8f8ff;
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  width: 98%;
+  /* background: #f8f8ff; */
+  /* box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); */
   backdrop-filter: blur(5.5px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
-.header_Dashboard {
-  background-color: rgb(255, 255, 255);
-  display: flex;
-  justify-content: space-between;
-  width: 98%;
-  gap: 1rem;
-  margin: auto;
-  align-items: center;
-  /* background-color: rgba(255, 255, 255, 0.2); */
-  /* margin: 0 30px; */
+.home_title {
+  text-align: center;
+  font-size: 3vw;
+  color: black;
 }
 
 .video_top {
@@ -34,60 +29,85 @@
   border-radius: 2rem;
 }
 
-/* ----- About --------- */
-.aboutHome {
-  height: auto;
+.home_ourway {
+  /* background-color: yellowgreen; */
 }
-.about_container {
+.home_ourway h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+.home_ourway img {
+  display: flex;
+  width: 90%;
+  height: 40vh;
+  margin: auto;
+  border-radius: 20px;
+}
+
+/* ----- whychooseus --------- */
+.whychooseus {
+  width: 90%;
+  height: auto;
+  margin: auto;
+}
+.whychooseus_container {
   /* background-color: #1eb2a6; */
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
+  /* gap: 1rem; */
 }
-.aboutHome #heading {
-  text-align: left;
+.whychooseus #heading {
+  text-align: right;
   padding: 0;
+  font-size: 1.5rem;
 }
-.aboutHome .left {
-  margin: auto;
+
+.whychooseus .left_row {
+  display: flex;
+  flex: 1;
   align-items: center;
   justify-content: center;
-  padding-left: 1rem;
-  padding-top: 1rem;
+  /* background-color: wheat; */
+  width: 100%;
+  height: auto;
 }
-.aboutHome .left img {
-  width: 40rem;
-  height: 53rem;
+.whychooseus .left_row img {
+  width: 100%;
+  height: 40rem;
+  display: flex;
+  margin: auto;
 }
-.aboutHome .right {
+.whychooseus .right_row {
   flex: 1;
-  /* padding: 80px 50px; */
+  padding: 80px 50px;
+  direction: rtl;
+  /* background-color: violet; */
 }
-.aboutHome .items {
-  margin-top: 50px;
+.whychooseus .items {
+  margin-top: 10px;
 }
-.aboutHome .item {
-  background-color: #fff;
-  margin-top: 30px;
+.whychooseus .item {
+  background-color: rgb(232, 199, 199);
+  margin-top: 20px;
   padding: 20px;
   transition: 0.5s;
 }
 
-.aboutHome .item h2 {
+.whychooseus .item h2 {
   font-size: 20px;
   margin-bottom: 15px;
 }
-.aboutHome .item p {
+.whychooseus .item p {
   color: #999999;
 }
-.aboutHome .item:hover {
+.whychooseus .item:hover {
   background-color: #1eb2a6;
   color: #fff;
   cursor: pointer;
   box-shadow: 0 5px 25px -2px rgb(0 0 0 / 6%);
 }
-.aboutHome .item:hover p {
+.whychooseus .item:hover p {
   color: #fff;
 }
 
@@ -232,7 +252,7 @@
 
 .grid3 {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   grid-gap: 10px;
 }
 /*-------------online---------*/

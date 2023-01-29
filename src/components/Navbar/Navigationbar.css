@@ -1,12 +1,9 @@
 nav {
   position: fixed;
   width: 100%;
-  height: 10rem;
+  /* height: 10rem; */
   z-index: 1;
-  /* box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); */
   backdrop-filter: blur(5.5px);
-  /* border-radius: 10px; */
-  /* border: 1px solid rgba(255, 255, 255, 0.18); */
 }
 
 .navbar_container {
@@ -16,18 +13,28 @@ nav {
   align-content: center;
   align-items: center;
   /* background-color: bisque; */
-  padding-top: 1rem;
+  padding-top: 0.5rem;
 }
 
 .left_navbar {
   /* background-color: brown; */
   display: flex;
   gap: 2rem;
-  padding-left: 10rem;
+  padding-left: 5rem;
 }
 
 .right_navbar {
   /* background-color: aqua; */
   display: flex;
-  padding-right: 10rem;
+  padding-right: 1rem;
+}
+
+.right_navbar h2 {
+  padding-right: 1rem;
+}
+
+.right_navbar img {
+  width: 48px;
+  height: auto;
+  border-radius: 10px;
 }
