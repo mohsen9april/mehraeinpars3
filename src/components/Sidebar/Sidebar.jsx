@@ -149,7 +149,7 @@ const Sidebar = () => {
       <div
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
-        className="main-container"
+        className="sidebar_container"
       >
         <motion.div
           animate={{
@@ -160,14 +160,8 @@ const Sidebar = () => {
               damping: 10,
             },
           }}
-          className={`sidebar `}
+          className="sidebar_content"
         >
-          {/* <div className="top_section">
-            <div className="bars">
-              <FaBars onClick={toggle} />
-            </div>
-          </div> */}
-
           <section className="routes">
             {routes.map((route, index) => {
               if (route.subRoutes) {

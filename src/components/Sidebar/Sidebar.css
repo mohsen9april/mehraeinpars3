@@ -1,19 +1,13 @@
-.main-container {
+.sidebar_container {
   display: flex;
+  align-items: center;
+  /* background-color: yellowgreen; */
+  padding-top: 0.5rem;
 }
 
-.sidebar {
-  /* position: sticky; */
-  /* margin-right: 1rem; */
+.sidebar_content {
   display: flex;
   flex-direction: column;
-  /* height: 100%; */
-  /* height: fit-content; */
-  /* justify-content: flex-start; */
-  /* box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); */
-  /* backdrop-filter: blur(5.5px);
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18); */
   overflow-y: hidden;
   overflow-x: hidden;
 }
@@ -21,12 +15,13 @@
 .link {
   display: flex;
   color: black;
-  gap: 10px;
+  gap: 0.5rem;
   padding: 5px 10px;
   border-right: 4px solid transparent;
   transition: 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
   text-decoration: none;
   cursor: pointer;
+  align-items: center;
 }
 .link:hover {
   border-radius: 0.5rem;
@@ -40,8 +35,10 @@
 }
 .link_text {
   white-space: nowrap;
-  font-size: 12px;
+  font-size: 13px;
   color: black;
+  font-weight: bold;
+  align-items: center;
 }
 
 .menu {
@@ -54,11 +51,13 @@
 }
 .menu_item {
   display: flex;
-  gap: 10px;
+  gap: 0.5rem;
+  align-items: center;
 }
 .menu_container {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 .menu_container .link {
   padding-left: 20px;
