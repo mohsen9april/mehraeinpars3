@@ -3,6 +3,7 @@ import "./Home.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import CountupHome from "./CountupHome";
+import ProductsHome from "./ProductsHome";
 
 export const homeAbout = [
   {
@@ -133,7 +134,11 @@ const Home = () => {
       <br />
       <br />
 
-      <section className="whychooseus">
+      <div>
+        <ProductsHome />
+      </div>
+
+      {/* <section className="whychooseus">
         <div className="whychooseus_container">
           <div className="left_row">
             <div>
@@ -159,9 +164,9 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       <br />
-      <div
+      {/* <div
         data-aos="fade-right"
         data-aos-offset="100"
         data-aos-delay="30"
@@ -173,7 +178,7 @@ const Home = () => {
       >
         <img style={{ display: "flex", margin: "auto" }} src="./images/image1.png" alt="/" />
       </div>
-      <br></br>
+      <br></br> */}
       <br></br>
 
       {/* Workshop Section */}

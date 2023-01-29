@@ -27,7 +27,7 @@ function App() {
           <Sidebar />
         </div>
 
-        <div>
+        <div className="mainpage_container">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/reports/products" element={<Reportsproduct />} />
