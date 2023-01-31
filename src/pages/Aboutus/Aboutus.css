@@ -1,18 +1,31 @@
 .aboutus_container {
-  direction: ltr;
+  /* direction: ltr; */
+  width: 100%;
 }
 
 .video_top_aboutus {
-  padding-top: 1rem;
   padding-bottom: 1rem;
-  width: 100%;
+  width: 99%;
   height: auto;
+  margin: auto;
   align-items: center;
   text-align: center;
 }
 
 .video_top_aboutus video {
-  width: 98%;
+  width: 99%;
   height: auto;
   border-radius: 2rem;
+}
+
+.aboutus_map_container {
+  height: 32rem;
+  width: 98%;
+  margin: auto;
+}
+
+.aboutus_map {
+  height: 30rem;
+  width: 100%;
+  border-radius: 30px;
 }

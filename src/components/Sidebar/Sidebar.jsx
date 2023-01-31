@@ -74,11 +74,11 @@ const routes = [
     name: "واحد کنترل کیفیت",
     icon: <TroubleshootIcon />,
   },
-  {
-    path: "/messages",
-    name: "گالری",
-    icon: <PhotoLibraryIcon />,
-  },
+  // {
+  //   path: "/messages",
+  //   name: "گالری",
+  //   icon: <PhotoLibraryIcon />,
+  // },
 
   {
     path: "/analytics",
