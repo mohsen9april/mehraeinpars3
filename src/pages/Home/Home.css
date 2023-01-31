@@ -200,6 +200,7 @@
 /*-------------online---------*/
 .online {
   text-align: center;
+  width: 92%;
 }
 .online .box {
   box-shadow: 0 5px 25px -2px rgb(0 0 0 / 6%);

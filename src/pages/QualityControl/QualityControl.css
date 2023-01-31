@@ -1,0 +1,120 @@
+.qualitycontrol_container {
+  margin: auto;
+  /* background-color: turquoise; */
+  width: 100%;
+}
+
+.header_qc {
+  /* background-color: yellow; */
+  width: 95%;
+  height: 30rem;
+  margin: auto;
+  margin-top: 1rem;
+  padding: 1rem;
+  position: relative;
+}
+
+.topheader_qc {
+  display: flex;
+  margin: auto;
+  width: 99%;
+  height: auto;
+}
+
+.topheader_qc img {
+  display: flex;
+  margin: auto;
+  width: 100%;
+  border-radius: 30px;
+}
+
+.bottomheader_qc {
+  position: absolute;
+  background-color: black;
+  left: 25%;
+  top: 85%;
+  width: 50%;
+  height: 9rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.9rem;
+  border-radius: 20px;
+  color: white;
+}
+
+.description_qc {
+  /* background-color: yellow; */
+  direction: rtl;
+  width: 92%;
+  margin: auto;
+}
+
+.equipment_qc_container {
+  /* background-color: yellow; */
+}
+
+/*-------------online---------*/
+.online {
+  text-align: center;
+  width: 92%;
+  /* background-color: tomato; */
+  margin: auto;
+}
+.online .box {
+  box-shadow: 0 5px 25px -2px rgb(0 0 0 / 6%);
+  background-color: #fff;
+  padding: 30px 20px;
+  transition: 0.5s;
+}
+.online .img {
+  width: 80px;
+  height: 80px;
+  margin: auto;
+  position: relative;
+}
+.online img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.online h1 {
+  font-weight: 500;
+  font-size: 20px;
+  margin: 20px 0;
+  line-height: 30px;
+}
+.online span {
+  background-color: #f8f8f8;
+  padding: 5px 20px;
+  font-weight: 500;
+  font-size: 15px;
+  color: #1eb2a6;
+  border-radius: 5px;
+}
+.online .box .show {
+  opacity: 0;
+}
+.online .box:hover {
+  background-color: #1eb2a6;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.online .box:hover .show {
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.online .box:hover h1 {
+  color: #fff;
+}
+
+.grid3_qc {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 10px;
+}
+/*-------------online---------*/
+@media screen and (max-width: 768px) {
+}

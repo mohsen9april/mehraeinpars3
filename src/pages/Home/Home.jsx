@@ -235,6 +235,12 @@ const Home = () => {
         src="./images/Workshop.png"
         alt="/"
       />
+      <h1>سامانه </h1>
+      <img
+        style={{ display: "flex", margin: "auto", width: "70rem" }}
+        src="./images/home1.png"
+        alt="/"
+      />
     </div>
   );
 };

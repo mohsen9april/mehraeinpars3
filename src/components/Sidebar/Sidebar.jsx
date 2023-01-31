@@ -29,45 +29,45 @@ const routes = [
     path: "/products",
     name: "محصولات",
     icon: <ProductionQuantityLimitsIcon />,
-    subRoutes: [
-      {
-        path: "/products/testliner",
-        name: "تست لاینر  ",
-        icon: <FaUser />,
-      },
-      {
-        path: "/products/fluting",
-        name: "فلوتینگ ",
-        icon: <FaLock />,
-      },
-      {
-        path: "/products/liner",
-        name: "لاینر ",
-        icon: <FaMoneyBill />,
-      },
-    ],
+    // subRoutes: [
+    //   {
+    //     path: "/products/testliner",
+    //     name: "تست لاینر  ",
+    //     icon: <FaUser />,
+    //   },
+    //   {
+    //     path: "/products/fluting",
+    //     name: "فلوتینگ ",
+    //     icon: <FaLock />,
+    //   },
+    //   {
+    //     path: "/products/liner",
+    //     name: "لاینر ",
+    //     icon: <FaMoneyBill />,
+    //   },
+    // ],
   },
   {
     path: "/Commercial-Department",
     name: "واحد بازرگانی",
     icon: <AttachMoneyIcon />,
-    subRoutes: [
-      {
-        path: "/Commercial-Department/Sales",
-        name: "فروش محصولات ",
-        icon: <FaUser />,
-      },
-      {
-        path: "/Commercial-Department/Buy",
-        name: "تامین آخال",
-        icon: <FaLock />,
-      },
-      {
-        path: "/Commercial-Department/supply",
-        name: "تامین تجهیزات",
-        icon: <FaMoneyBill />,
-      },
-    ],
+    // subRoutes: [
+    //   {
+    //     path: "/Commercial-Department/Sales",
+    //     name: "فروش محصولات ",
+    //     icon: <FaUser />,
+    //   },
+    //   {
+    //     path: "/Commercial-Department/Buy",
+    //     name: "تامین آخال",
+    //     icon: <FaLock />,
+    //   },
+    //   {
+    //     path: "/Commercial-Department/supply",
+    //     name: "تامین تجهیزات",
+    //     icon: <FaMoneyBill />,
+    //   },
+    // ],
   },
   {
     path: "/Qulitycontrol",
@@ -153,7 +153,7 @@ const Sidebar = () => {
       >
         <motion.div
           animate={{
-            width: isOpen ? "160px" : "50px",
+            width: isOpen ? "170px" : "50px",
             transition: {
               duration: 0.5,
               type: "spring",

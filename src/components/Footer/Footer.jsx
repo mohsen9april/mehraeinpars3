@@ -11,7 +11,7 @@ const Footer = () => {
     <div className="footer_container">
       <div>
         <footer>
-          <div class="container">
+          <div class="footer_container">
             <div class="sec about">
               <h2>درباره ما</h2>
               <h3 className="footer_right_h3">

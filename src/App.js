@@ -13,6 +13,7 @@ import Reportstore from "./pages/Reports/Reportstore/Reportstore";
 import Reportsproduct from "./pages/Reports/Reportsproduct/Reportsproduct";
 import Navigationbar from "./components/Navbar/Navigationbar";
 import Aboutus from "./pages/Aboutus/Aboutus";
+import QualityControl from "./pages/QualityControl/QualityControl";
 
 function App() {
   return (
@@ -35,7 +36,7 @@ function App() {
             <Route path="/reports/store" element={<Reportstore />} />
             <Route path="/messages" element={<Messages />} />
             <Route path="/analytics" element={<Newline />} />
-            <Route path="/file-manager" element={<FileManager />} />
+            <Route path="/Qulitycontrol" element={<QualityControl />} />
             <Route path="/order" element={<Order />} />
             <Route path="/Aboutus" element={<Aboutus />} />
             <Route path="/settings" element={<Setting />} />

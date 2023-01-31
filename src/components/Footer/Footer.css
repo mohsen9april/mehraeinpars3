@@ -15,42 +15,39 @@ footer {
   margin: auto;
 }
 
-footer .container {
+footer .footer_container {
+  display: flex;
   margin: auto;
   width: 100%;
-  display: flex;
   justify-content: space-between;
-  gap: 2rem;
-
-  /* flex-wrap: wrap; */
-  /* flex-direction: row; */
+  gap: 1rem;
 }
 
-footer .container .sec {
+footer .footer_container .sec {
   margin-right: 5px;
 }
 
-footer .container .sec.about {
-  max-width: 27rem;
-  flex: 2;
+footer .footer_container .sec.about {
+  /* max-width: 27rem; */
+  flex: 1;
 }
-footer .container .sec.quickLinks {
+footer .footer_container .sec.quickLinks {
   /* width: 25%; */
   flex: 1;
 }
-footer .container .sec.contact {
+footer .footer_container .sec.contact {
   /* width: 35%; */
   flex: 1;
 }
 
-footer .container h2 {
+footer .footer_container h2 {
   position: relative;
   color: #fff;
   margin-bottom: 15px;
   font-weight: 500;
 }
 
-footer .container h2:before {
+footer .footer_container h2:before {
   content: "";
   position: absolute;
   bottom: -5px;
@@ -227,7 +224,9 @@ footer p {
 
 .socialMedia :hover {
   /* color: #3f71ea; */
-  color: #e0ac1c;
+  /* color: #e0ac1c; */
+  color: #1eb2a6;
+
   transition: 500ms;
 }
 

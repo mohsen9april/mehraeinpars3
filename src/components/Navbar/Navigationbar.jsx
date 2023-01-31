@@ -13,7 +13,7 @@ const Navigationbar = () => {
   const listenScrollEvent = () => {
     window.scrollY > 10 ? setnavColor("#252734") : setnavColor("transparent");
     window.scrollY > 10 ? setnavLinkColor("#ffffff") : setnavLinkColor("#000000");
-    window.scrollY > 10 ? setnavSize("62px") : setnavSize("45px");
+    window.scrollY > 10 ? setnavSize("68px") : setnavSize("45px");
   };
   useEffect(() => {
     window.addEventListener("scroll", listenScrollEvent);

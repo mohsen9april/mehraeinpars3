@@ -33,6 +33,9 @@ hr {
 }
 
 .mainpage_container {
+  display: flex;
   width: 92%;
+  direction: ltr;
   margin: auto;
+  /* background-color: #ff3838; */
 }
