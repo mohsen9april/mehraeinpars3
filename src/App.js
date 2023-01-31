@@ -14,6 +14,7 @@ import Reportsproduct from "./pages/Reports/Reportsproduct/Reportsproduct";
 import Navigationbar from "./components/Navbar/Navigationbar";
 import Aboutus from "./pages/Aboutus/Aboutus";
 import QualityControl from "./pages/QualityControl/QualityControl";
+import Products from "./pages/Products/Products";
 
 function App() {
   return (
@@ -37,7 +38,7 @@ function App() {
             <Route path="/messages" element={<Messages />} />
             <Route path="/analytics" element={<Newline />} />
             <Route path="/Qulitycontrol" element={<QualityControl />} />
-            <Route path="/order" element={<Order />} />
+            <Route path="/products" element={<Products />} />
             <Route path="/Aboutus" element={<Aboutus />} />
             <Route path="/settings" element={<Setting />} />
             <Route path="*" element={<> not found</>} />

@@ -148,7 +148,7 @@ const QualityControl = () => {
               {online.map((val) => (
                 <div className="box">
                   <div className="img">
-                    <img src={val.cover} alt="/" />
+                    <img className="image_cover" src={val.cover} alt="/" />
                     <img src={val.hoverCover} alt="/" className="show" />
                   </div>
                   <h1>{val.courseName}</h1>
