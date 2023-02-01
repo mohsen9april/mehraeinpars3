@@ -39,7 +39,7 @@ const ProductsHome = () => {
           </div>
 
           <div class="box">
-            <img className="image" src="./images/paper.jpg" alt="" />
+            <img className="image" src="./images/testliner.jpg" alt="" />
 
             <div class="content">
               {/* <img src="images/s-3.png" alt="" /> */}
