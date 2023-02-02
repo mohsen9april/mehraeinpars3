@@ -15,6 +15,9 @@ import Navigationbar from "./components/Navbar/Navigationbar";
 import Aboutus from "./pages/Aboutus/Aboutus";
 import QualityControl from "./pages/QualityControl/QualityControl";
 import Products from "./pages/Products/Products";
+import CommercialDepartment from "./pages/CommercialDepartment/CommercialDepartment";
+import ContactusManager from "./pages/ContactUs/ContactusManager/ContactusManager";
+import ContactusEmployment from "./pages/ContactUs/ContactusEmployment/ContactusEmployment";
 
 function App() {
   return (
@@ -32,15 +35,18 @@ function App() {
         <div className="mainpage_container">
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/products" element={<Products />} />
+            <Route path="/Commercial-Department" element={<CommercialDepartment />} />
             <Route path="/reports/products" element={<Reportsproduct />} />
             <Route path="/reports/chemicals" element={<Reportschemical />} />
             <Route path="/reports/store" element={<Reportstore />} />
             <Route path="/messages" element={<Messages />} />
             <Route path="/analytics" element={<Newline />} />
             <Route path="/Qulitycontrol" element={<QualityControl />} />
-            <Route path="/products" element={<Products />} />
+            <Route path="/contactus/manager" element={<ContactusManager />} />
+            <Route path="/contactus/employment" element={<ContactusEmployment />} />
+            <Route path="/contactus/call" element={<ContactusManager />} />
             <Route path="/Aboutus" element={<Aboutus />} />
-            <Route path="/settings" element={<Setting />} />
             <Route path="*" element={<> not found</>} />
           </Routes>
         </div>

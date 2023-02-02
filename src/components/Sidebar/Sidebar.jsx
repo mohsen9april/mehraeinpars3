@@ -87,23 +87,23 @@ const routes = [
   },
 
   {
-    path: "/settings",
+    path: "/contactus",
     name: "تماس با ما",
     icon: <AddIcCallIcon />,
     exact: true,
     subRoutes: [
       {
-        path: "/settings/profile",
+        path: "/contactus/manager",
         name: "ارتباط با مدیریت  ",
         icon: <FaUser />,
       },
       {
-        path: "/settings/2fa",
+        path: "/contactus/employment",
         name: "فرم استخدام",
         icon: <FaLock />,
       },
       {
-        path: "/settings/billing",
+        path: "/contactus/call",
         name: "اطلاعات تماس",
         icon: <FaMoneyBill />,
       },
