@@ -1,9 +1,5 @@
 import "./App.css";
 import { Route, Routes } from "react-router-dom";
-import Messages from "./pages/Messages";
-import FileManager from "./pages/FileManager";
-import Order from "./pages/Order";
-import Setting from "./pages/Setting";
 import Sidebar from "./components/Sidebar/Sidebar";
 import Home from "./pages/Home/Home";
 import Newline from "./pages/Newline/Newline";
@@ -37,11 +33,10 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/products" element={<Products />} />
             <Route path="/Commercial-Department" element={<CommercialDepartment />} />
-            <Route path="/reports/products" element={<Reportsproduct />} />
+            {/* <Route path="/reports/products" element={<Reportsproduct />} />
             <Route path="/reports/chemicals" element={<Reportschemical />} />
-            <Route path="/reports/store" element={<Reportstore />} />
-            <Route path="/messages" element={<Messages />} />
-            <Route path="/analytics" element={<Newline />} />
+            <Route path="/reports/store" element={<Reportstore />} /> */}
+            <Route path="/Newline" element={<Newline />} />
             <Route path="/Qulitycontrol" element={<QualityControl />} />
             <Route path="/contactus/manager" element={<ContactusManager />} />
             <Route path="/contactus/employment" element={<ContactusEmployment />} />

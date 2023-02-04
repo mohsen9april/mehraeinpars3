@@ -1,30 +1,30 @@
 import React, { useEffect } from "react";
-import "./Home.css";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import CountupHome from "./CountupHome";
 import ProductsHome from "./ProductsHome";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import "./Home.css";
 
-export const homeAbout = [
-  {
-    id: 1,
-    cover: "https://img.icons8.com/dotty/80/000000/storytelling.png",
-    title: "دانش",
-    desc: " texts.",
-  },
-  {
-    id: 1,
-    cover: "https://img.icons8.com/ios/80/000000/diploma.png",
-    title: "صلاحیت",
-    desc: " texts.",
-  },
-  {
-    id: 1,
-    cover: "https://img.icons8.com/ios/80/000000/athlete.png",
-    title: "تخصص",
-    desc: " texts.",
-  },
-];
+// export const homeAbout = [
+//   {
+//     id: 1,
+//     cover: "https://img.icons8.com/dotty/80/000000/storytelling.png",
+//     title: "دانش",
+//     desc: " texts.",
+//   },
+//   {
+//     id: 1,
+//     cover: "https://img.icons8.com/ios/80/000000/diploma.png",
+//     title: "صلاحیت",
+//     desc: " texts.",
+//   },
+//   {
+//     id: 1,
+//     cover: "https://img.icons8.com/ios/80/000000/athlete.png",
+//     title: "تخصص",
+//     desc: " texts.",
+//   },
+// ];
 
 export const online = [
   {
@@ -99,44 +99,56 @@ const Heading = ({ subtitle, title }) => {
     </>
   );
 };
+
 const Home = () => {
+  // For AOS
   useEffect(() => {
     AOS.init({
-      delay: 200,
-      throttleDelay: 99,
+      // delay: 200,
+      // throttleDelay: 99,
     });
   }, []);
 
   return (
     <div className="home_container">
       <div className="home_title">
-        <h2>کاغذسازی مهرآیین پارس</h2>
+        <h3>کاغذسازی مهرآیین پارس</h3>
       </div>
       <div className="video_top">
         <video loop autoPlay>
           <source src="./images/video.mp4" type="video/mp4" />
         </video>
       </div>
+      <br />
+      <div
+        data-aos-duration="1000"
+        data-aos="fade-up"
+        // data-aos-offset="50"
+        // data-aos-delay="30"
+        // data-aos-duration="500"
+        // data-aos-easing="ease-in-out"
+        // data-aos-mirror="true"
+        // data-aos-once="false"
+        // data-aos-anchor-placement="top-center"
+      >
+        <CountupHome />
+      </div>
+      <br />
+
+      <div data-aos-duration="1000" data-aos="fade-right">
+        <ProductsHome />
+      </div>
 
       <br />
       <br />
 
-      <CountupHome />
-
-      <br />
-      <br />
-
-      <div className="home_ourway">
+      <div data-aos-duration="1000" data-aos="slide-up" className="home_ourway">
         <h2>مسیر ما برای مسئولیت زیست محیطی</h2>
         <img src="./images/ourway.png" alt="/" />
       </div>
 
       <br />
       <br />
-
-      <div>
-        <ProductsHome />
-      </div>
 
       {/* <section className="whychooseus">
         <div className="whychooseus_container">
@@ -192,9 +204,12 @@ const Home = () => {
       // data-aos-once="false"
       // data-aos-anchor-placement="top-center"
       >
-        <section className="online">
+        <section data-aos="zoom-in-down" data-aos-duration="1000" className="online">
           <div className="container">
-            <Heading subtitle="WORK SHOP " title="" />
+            {/* <Heading subtitle="WORK SHOP " title="" /> */}
+            <div className="online_header">
+              <h2>دپارتمان مهرآیین پارس</h2>
+            </div>
             <div className="content grid3">
               {online.map((val) => (
                 <div className="box">
@@ -203,7 +218,7 @@ const Home = () => {
                     <img src={val.hoverCover} alt="/" className="show" />
                   </div>
                   <h1>{val.courseName}</h1>
-                  <span>{val.course}</span>
+                  {/* <span>{val.course}</span> */}
                 </div>
               ))}
             </div>
@@ -212,7 +227,8 @@ const Home = () => {
       </div>
 
       <br />
-      <img style={{ display: "flex", margin: "auto" }} src="./images/aboutus1.png" alt="/" />
+      <br />
+      {/* <img style={{ display: "flex", margin: "auto" }} src="./images/aboutus1.png" alt="/" />
       <br />
       <br />
       <h1> Who We Are </h1>
@@ -234,13 +250,16 @@ const Home = () => {
         style={{ display: "flex", margin: "auto", width: "70rem" }}
         src="./images/Workshop.png"
         alt="/"
-      />
-      <h1>سامانه </h1>
-      <img
-        style={{ display: "flex", margin: "auto", width: "70rem" }}
-        src="./images/home1.png"
-        alt="/"
-      />
+      /> */}
+      <div data-aos="zoom-in-down" data-aos-duration="1000">
+        <img
+          style={{ display: "flex", margin: "auto", width: "80%" }}
+          src="./images/home1.png"
+          alt="/"
+        />
+      </div>
+      <br />
+      <br />
     </div>
   );
 };

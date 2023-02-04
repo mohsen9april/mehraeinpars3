@@ -81,7 +81,7 @@ const routes = [
   // },
 
   {
-    path: "/analytics",
+    path: "/Newline",
     name: "خط جدید",
     icon: <AccountTreeIcon />,
   },
