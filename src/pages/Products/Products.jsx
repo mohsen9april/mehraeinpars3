@@ -1,9 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "./Products.css";
 
 const Products = () => {
+  // For AOS
+  useEffect(() => {
+    AOS.init({
+      // delay: 200,
+      // throttleDelay: 99,
+    });
+  }, []);
   return (
     <div className="products_container">
+      <div className="home_title">
+        <h3>محصولات کاغذسازی مهرآیین پارس</h3>
+      </div>
       <div className="video_products">
         <video loop autoPlay>
           <source src="./images/products.mp4" type="video/mp4" />
@@ -13,10 +25,10 @@ const Products = () => {
       <section>
         <h2 className="products_header">کاغذ تست‌لاینر</h2>
         <div className="testline_container">
-          <div className="testliner_left">
-            <img src="./images/testliner.jpg" />
+          <div data-aos-duration="1000" data-aos="fade-up" className="testliner_left">
+            <img src="./images/testliner.jpg" alt="/" />
           </div>
-          <div className="testliner_right">
+          <div data-aos-duration="1000" data-aos="fade-right" className="testliner_right">
             <p>
               کاغذ تست‌لاینر بصورت کامل از الیاف بازیافتی تولید می‌شود ولی در فرایند تولید آن از
               افزودنی‌هایی مثل نشاسته (بصورت آهار در یک طرف یا هر دو طرفِ کاغذ) و افزودنی‌های دیگری
@@ -49,7 +61,7 @@ const Products = () => {
       <section>
         <h2 className="products_header">کاغذ ‌لاینر</h2>
         <div className="testline_container">
-          <div className="testliner_right">
+          <div data-aos-duration="1000" data-aos="fade-left" className="testliner_right">
             <p>
               اگر کاغذی تولید کنیم که صد درصد آن از کاغذهای بازیافتی (آخال) تولیدشده باشد به آن کاغذ
               لاینر گفته می‌شود. کاغذ لاینر در بازار به نام‌های کاغذ قهوه‌ای، کاغذ ایرانی یا کاغذ
@@ -73,12 +85,12 @@ const Products = () => {
             </p>
             <br />
             <p>
-              شرکت صنایع کاغذسازی کاوه با بکارگیری نیروهای متخصص و مجرب و داشتن امکانات آزمایشگاهی
+              شرکت کاغذسازی مهرآیین پارس با بکارگیری نیروهای متخصص و مجرب و داشتن امکانات آزمایشگاهی
               مدرن سعی در ارائه محصولاتی با کیفیت بالا و مطلوب به مصرف‌کنندگان را دارد.
             </p>
           </div>
-          <div className="testliner_left">
-            <img src="./images/liner.jpg" />
+          <div data-aos-duration="1000" data-aos="slide-up" className="testliner_left">
+            <img src="./images/liner.jpg" alt="/" />
           </div>
         </div>
       </section>
@@ -86,15 +98,13 @@ const Products = () => {
       <section>
         <h2 className="products_header">کاغذ فلوتینگ</h2>
         <div className="testline_container">
-          <div className="testliner_left">
-            <img src="./images/fluting.jpg" />
+          <div data-aos-duration="1000" data-aos="slide-up" className="testliner_left">
+            <img src="./images/fluting.jpg" alt="/" />
           </div>
-          <div className="testliner_right">
+          <div data-aos-duration="1000" data-aos="fade-right" className="testliner_right">
             <p>
               کاغذ فلوتینگ یا کاغذ کنگره ای، به کاغذهایی ضخیم و موج دار گفته می شود که به عنوان لایه
-              میانی در کارتن سازی مورد استفاده قرار میگیرد. خمیر اولیه این کاغذ از ضایعات کشاورزی،
-              الیاف غیرچوبی، خمیر چوب، کاغذهای باطله، بازیافتی و … به دست می آید. با خشک شدن این
-              خمیر طی فرایندی خاص، کاغذ فلوتینگ به دست می آید. وزن لایه میانی هر متر مربع از کاغذ
+              میانی در کارتن سازی مورد استفاده قرار میگیرد.وزن لایه میانی هر متر مربع از کاغذ
               فلوتینگ بین 80 تا 200 گرم است که بر اساس استانداردهای بین المللی، حداقل وزن استاندارد
               آن 80 گرم بر متر مربع تعیین شده است.
             </p>
@@ -107,16 +117,16 @@ const Products = () => {
             </p>
             <br />
             <p>
-              همانطور که در بالا اشاره شد کاغذ فلوتینگ در تهیه ورق‌های کارتن جهت تأمین مقاومت آن به
-              کار می‌رود. ورق کارتن معمولا در دو نوع سه لایه و پنج لایه تولید می‌شود. در تولید ورق
-              سه لایه یک ورق کاغذ فلوتینگ در میان دو لایه کاغذ قرار می‌گیرد. اما در تولید ورق کارتن
-              پنج لایه یک ورق کاغذ بازیافتی در میان دو ورق فلوتینگ قرار می‌گیرد و دو لایه کاغذ
-              مرغوب‌تر در دو سوی آنها روکش می‌شود. معمولا برای روکش بیرونی از کاغذهای با کیفیت‌تر
-              استفاده می‌شود تا شرایط چاپ مستقیم روی ورق کارتن فراهم گردد.
+              کاغذ فلوتینگ در تهیه ورق‌های کارتن جهت تأمین مقاومت آن به کار می‌رود. ورق کارتن معمولا
+              در دو نوع سه لایه و پنج لایه تولید می‌شود. در تولید ورق سه لایه یک ورق کاغذ فلوتینگ در
+              میان دو لایه کاغذ قرار می‌گیرد. اما در تولید ورق کارتن پنج لایه یک ورق کاغذ بازیافتی
+              در میان دو ورق فلوتینگ قرار می‌گیرد و دو لایه کاغذ مرغوب‌تر در دو سوی آنها روکش
+              می‌شود. معمولا برای روکش بیرونی از کاغذهای با کیفیت‌تر استفاده می‌شود تا شرایط چاپ
+              مستقیم روی ورق کارتن فراهم گردد.
             </p>
             <br />
             <h2>مشخصات و ویژگی های کاغذ فلوتینگ</h2>
-            <ul>
+            <ul data-aos-duration="1600" data-aos="fade-left">
               <li>ضخامت زیاد</li>
               <li>مقاوم در برابر فشار و ضربه</li>
               <li>انعطاف پذیر</li>
