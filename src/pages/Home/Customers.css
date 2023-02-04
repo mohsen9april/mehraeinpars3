@@ -1,0 +1,22 @@
+.Customer-header {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.Customer-container {
+  display: flex;
+  width: 90%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  align-items: center;
+  margin: auto;
+  /* background-color: yellowgreen; */
+  justify-content: center;
+  padding-bottom: 2rem;
+}
+
+.Customer-container img {
+  padding: 30px;
+  height: 200px;
+  width: 250px;
+}

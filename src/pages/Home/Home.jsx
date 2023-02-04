@@ -4,6 +4,7 @@ import ProductsHome from "./ProductsHome";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./Home.css";
+import Customers from "./Customers";
 
 // export const homeAbout = [
 //   {
@@ -251,6 +252,11 @@ const Home = () => {
         src="./images/Workshop.png"
         alt="/"
       /> */}
+
+      <div data-aos="fade-left" data-aos-duration="1000">
+        <Customers />
+      </div>
+
       <div data-aos="zoom-in-down" data-aos-duration="1000">
         <img
           style={{ display: "flex", margin: "auto", width: "80%" }}
