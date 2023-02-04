@@ -3,6 +3,8 @@
   display: flex;
   flex-direction: column;
   margin: auto;
+  /* background-color: #06d6a0; */
+  width: 95%;
 }
 
 .timeline_top {

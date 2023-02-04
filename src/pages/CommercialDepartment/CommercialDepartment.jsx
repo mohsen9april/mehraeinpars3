@@ -39,7 +39,7 @@ const CommercialDepartment = () => {
       <section>
         <div className="sale_container">
           <div data-aos-duration="1000" data-aos="fade-up" className="sale_left">
-            <img src="./images/sale2.jpg" />
+            <img src="./images/sale2.jpg" alt="/" />
           </div>
           <div data-aos-duration="1000" data-aos="fade-left" className="sale_right">
             <h2>مهمترین فعالیت‌های تیم فروش ما</h2>
@@ -58,7 +58,7 @@ const CommercialDepartment = () => {
       <section>
         <div className="sale_container">
           <div data-aos-duration="1000" data-aos="fade-left" className="sale_left">
-            <img src="./images/sale1.jpg" />
+            <img src="./images/sale1.jpg" alt="/" />
           </div>
           <div data-aos-duration="1000" data-aos="fade-right" className="sale_right">
             <h2>واحد‌های زیر مجموعه‌ واحد فروش شرکت</h2>

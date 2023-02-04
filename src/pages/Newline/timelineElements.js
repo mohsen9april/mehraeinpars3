@@ -1,27 +1,28 @@
 let timelineElements = [
   {
     id: 1,
-    title: "Frontend Developer",
-    location: "Dragontail, Ascana",
+    title: " گود برداری   ",
+    location: " مرحله اول  ",
     description:
       "Converting data to a graphical interface, through the use of HTML, CSS, and JavaScript, so that users can view and interact with that data.",
     buttonText: "View Frontend Projects",
-    date: "August 2016 - present",
+    date: "اردیبهشت ماه  ۱۴۰۱",
     icon: "work",
   },
   {
     id: 2,
-    title: "Backend Developer",
-    location: "Skystead, Craonia",
+    title: "ساخت پی فونداسیون",
+    location:
+      " اجرای فندانسیون سوله ودیوار محوطه که شامل بتن مگر ،قالب بندی ،آرماتوربندی قرار دادن صفحه ستون و ریختن بتن. ",
     description:
       "Working hand-in-hand with front-end developers by providing the outward facing web application elements server-side logic. Creating the logic to make the web app function properly, and accomplishing this through the use of server-side scripting languages.",
     buttonText: "View Backend Projects",
-    date: "June 2013 - August 2016",
+    date: "خرداد ماه ۱۴۰۱ ",
     icon: "work",
   },
   {
     id: 3,
-    title: "Quality Assurance Engineer",
+    title: "ستون زیر زمین",
     location: "South Warren, Geshington",
     description:
       "Assessing the quality of specifications and technical design documents in order to ensure timely, relevant and meaningful feedback.",

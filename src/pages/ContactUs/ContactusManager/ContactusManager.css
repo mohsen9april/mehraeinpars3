@@ -1,0 +1,173 @@
+.cus_manager {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cus_manager_left {
+  background-color: yellow;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  padding: 1rem 2rem;
+}
+
+.cus_up {
+  /* background-color: tomato; */
+  width: 100%;
+}
+
+.cus_manager_right {
+  direction: rtl;
+  flex: 1;
+}
+
+.cus_row {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  direction: rtl;
+}
+
+.cus_input {
+  height: 3rem;
+  font-size: 1.5rem;
+}
+
+.cus_label {
+  font-size: 1.5rem;
+}
+
+/* Codeopen */
+/* ------------- */
+/* GLOBAL STYLES */
+/* ------------- */
+
+.container {
+  /* max-width: 1170px; */
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em;
+  padding-top: 2rem;
+  direction: rtl;
+}
+
+.wrapper {
+  box-shadow: 0 0 20px 0 rgba(57, 82, 163, 0.7);
+  display: flex;
+}
+
+.wrapper > * {
+  padding: 1em;
+}
+
+/* ------------------- */
+/* COMPANY INFORMATION */
+/* ------------------- */
+
+.company-info {
+  background: #c3c9dd;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  flex: 1;
+}
+
+.company-info h2 {
+  /* background-color: #3952a3; */
+  direction: rtl;
+  padding: 1rem 0;
+}
+
+/* ------- */
+/* CONTACT */
+/* ------- */
+
+.contact_manager {
+  background: #dcdfea;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  flex: 1;
+}
+
+/* ---- */
+/* FORM */
+/* ---- */
+
+.contact_manager form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.contact_manager form label {
+  display: block;
+}
+
+.contact_manager form p {
+  margin: 0;
+}
+
+.contact_manager form .full {
+  grid-column: 1 / 3;
+}
+
+.contact_manager form button,
+.contact_manager form input,
+.contact_manager form textarea {
+  width: 100%;
+  padding: 1em;
+  border: solid 1px #627edc;
+  border-radius: 4px;
+}
+
+.contact_manager form textarea {
+  resize: none;
+}
+
+.contact_manager form button {
+  background: #627edc;
+  border: 0;
+  color: #e4e4e4;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.contact_manager form button:hover,
+.contact_manager form button:focus {
+  background: #3952a3;
+  color: #ffffff;
+  outline: 0;
+  transition: background-color 2s ease-out;
+}
+
+/* ------------- */
+/* MEDIA QUERIES */
+/* ------------- */
+
+@media only screen and (min-width: 700px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .wrapper > * {
+    padding: 2em;
+  }
+
+  .company-info {
+    border-radius: 4px 0 0 4px;
+  }
+
+  .contact_manager {
+    border-radius: 0 4px 4px 0;
+  }
+
+  .company-info h3,
+  .company-info ul,
+  .brand {
+    text-align: left;
+  }
+}
