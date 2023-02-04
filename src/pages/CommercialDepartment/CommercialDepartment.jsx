@@ -1,16 +1,29 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import "./CommercialDepartment.css";
 
 const CommercialDepartment = () => {
+  // For AOS
+  useEffect(() => {
+    AOS.init({
+      // delay: 200,
+      // throttleDelay: 99,
+    });
+  }, []);
   return (
     <div>
-      <h2>Commercial-Department</h2>
-      <img
-        style={{ display: "flex", margin: "auto", width: "70rem" }}
-        src="./images/Sale-Banner.jpg"
-        alt="/"
-      />
-      <div>
+      {/* <h2>Commercial-Department</h2> */}
+      <div className="cd_Header">
+        <img src="./images/Sale-Banner.jpg" alt="/" />
+        <div class="centered">
+          <h2>واحد بازرگانی کاغذسازی مهرآیین پارس</h2>
+        </div>
+      </div>
+      <br />
+      <div className="sale_section">
         <h2>واحد فروش (Sales unit)</h2>
+        <br />
         <p>
           واحد فروش (Sales unit) با هدف ارائه محصولات و خدمات و در ارتباط مستقیم با مصرف‌کنندگان
           اقدام به فعالیت می‌کند. عرضه خدمات و فروش محصولات ما، همواره در گرو بررسی و کسب شناخت کافی
@@ -20,14 +33,17 @@ const CommercialDepartment = () => {
         </p>
       </div>
 
+      <br />
+      <br />
+
       <section>
-        <div className="testline_container">
-          <div className="testliner_left">
-            <img src="./images/sale1.jpg" />
+        <div className="sale_container">
+          <div data-aos-duration="1000" data-aos="fade-up" className="sale_left">
+            <img src="./images/sale2.jpg" />
           </div>
-          <div className="testliner_right">
+          <div data-aos-duration="1000" data-aos="fade-left" className="sale_right">
             <h2>مهمترین فعالیت‌های تیم فروش ما</h2>
-            <ul>
+            <ul data-aos-duration="1800" data-aos="fade-left">
               <li>معرفی کامل و همه جانبه مشخصات دقیق محصولات</li>
               <li>شناخت نیازهای بازار و بررسی درخواست‌های سفارشی‌سازی مشتریان</li>
               <li>انجام فعالیت‌های صادراتی و بازرگانی </li>
@@ -38,12 +54,13 @@ const CommercialDepartment = () => {
           </div>
         </div>
       </section>
+      <br />
       <section>
-        <div className="testline_container">
-          <div className="testliner_left">
-            <img src="./images/sale2.jpg" />
+        <div className="sale_container">
+          <div data-aos-duration="1000" data-aos="fade-left" className="sale_left">
+            <img src="./images/sale1.jpg" />
           </div>
-          <div className="testliner_right">
+          <div data-aos-duration="1000" data-aos="fade-right" className="sale_right">
             <h2>واحد‌های زیر مجموعه‌ واحد فروش شرکت</h2>
             <ul>
               <li>واحد بازاریابی</li>
