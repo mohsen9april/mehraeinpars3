@@ -1,13 +1,12 @@
 .qualitycontrol_container {
-  margin: auto;
-  /* background-color: turquoise; */
   width: 100%;
+  margin: auto;
 }
 
 .header_qc {
   /* background-color: yellow; */
   width: 95%;
-  height: 30rem;
+  height: auto;
   margin: auto;
   margin-top: 1rem;
   padding: 1rem;
@@ -17,8 +16,40 @@
 .topheader_qc {
   display: flex;
   margin: auto;
-  width: 99%;
+  width: 100%;
   height: auto;
+}
+
+.qc_centered {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* color: rgb(255, 255, 255); */
+  color: black;
+  height: auto;
+  width: 90%;
+  padding: 2.5rem 0;
+  /* background: rgba(20, 19, 19, 0.04);
+  box-shadow: 0 4px 30px rgba(99, 97, 97, 0.1);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  border: 1px solid rgba(255, 255, 255, 0.21); */
+
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.61);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.8px);
+  -webkit-backdrop-filter: blur(6.8px);
+}
+
+.qc_centered h2 {
+  text-align: center;
+  margin: auto;
+  font-size: 2.5vw;
 }
 
 .topheader_qc img {
@@ -28,25 +59,10 @@
   border-radius: 30px;
 }
 
-.bottomheader_qc {
-  position: absolute;
-  background-color: black;
-  left: 25%;
-  top: 85%;
-  width: 50%;
-  height: 9rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.9rem;
-  border-radius: 20px;
-  color: white;
-}
-
 .description_qc {
   /* background-color: yellow; */
   direction: rtl;
-  width: 92%;
+  width: 90%;
   margin: auto;
 }
 

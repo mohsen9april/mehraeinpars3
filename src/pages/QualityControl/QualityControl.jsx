@@ -82,11 +82,12 @@ const QualityControl = () => {
       <div className="header_qc">
         <div className="topheader_qc">
           <img src="./images/QC2.png" alt="/" />
-        </div>
-        <div className="bottomheader_qc">
-          <h3> واحد کنترل کیفیت کاغذسازی مهرآیین پارس</h3>
+          <div class="qc_centered">
+            <h2>واحد کنترل کیفیت کاغذسازی مهرآیین پارس</h2>
+          </div>
         </div>
       </div>
+
       <br />
       <br />
       <br />
@@ -152,7 +153,7 @@ const QualityControl = () => {
                     <img src={val.hoverCover} alt="/" className="show" />
                   </div>
                   <h1>{val.courseName}</h1>
-                  <span>{val.course}</span>
+                  {/* <span>{val.course}</span> */}
                 </div>
               ))}
             </div>
