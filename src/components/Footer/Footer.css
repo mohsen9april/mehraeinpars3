@@ -60,7 +60,7 @@ footer .footer_container h2:before {
 footer p {
   color: rgb(220, 220, 220);
   font-weight: 300;
-  line-height: 1.7em;
+  line-height: 1.5em;
 }
 
 .footer_right_h3 {
@@ -165,7 +165,7 @@ footer p {
   text-align: center;
   color: #999;
   font-weight: 300;
-  padding: 8px 40px;
+  padding: 12px 40px;
 }
 
 .footer-center i {

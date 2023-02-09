@@ -97,16 +97,16 @@ const routes = [
         name: "ارتباط با مدیریت  ",
         icon: <FaUser />,
       },
-      {
-        path: "/contactus/employment",
-        name: "فرم استخدام",
-        icon: <FaLock />,
-      },
-      {
-        path: "/contactus/call",
-        name: "اطلاعات تماس",
-        icon: <FaMoneyBill />,
-      },
+      // {
+      //   path: "/contactus/employment",
+      //   name: "فرم استخدام",
+      //   icon: <FaLock />,
+      // },
+      // {
+      //   path: "/contactus/call",
+      //   name: "اطلاعات تماس",
+      //   icon: <FaMoneyBill />,
+      // },
     ],
   },
   {
@@ -153,7 +153,7 @@ const Sidebar = () => {
       >
         <motion.div
           animate={{
-            width: isOpen ? "170px" : "50px",
+            width: isOpen ? "170px" : "52px",
             transition: {
               duration: 0.5,
               type: "spring",

@@ -1,10 +1,12 @@
 .sidebar_container {
   display: flex;
-  align-items: center;
-  padding-top: 0.5rem;
-  padding-right: 0.8rem;
+  /* align-items: center; */
+  /* padding-top: 0.5rem; */
+  padding-right: 0.2rem;
   position: fixed;
   z-index: 999;
+  line-height: 2.1;
+  /* background-color: yellow; */
 }
 
 .sidebar_container:hover {
@@ -15,6 +17,7 @@
   -webkit-backdrop-filter: blur(20px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
+  color: black;
 }
 
 .sidebar_content {
@@ -62,6 +65,7 @@
   border-right: 4px solid transparent;
   transition: 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
   justify-content: space-between;
+  color: black;
 }
 .menu_item {
   display: flex;
@@ -75,4 +79,9 @@
 .menu_container .link {
   padding-left: 20px;
   border-bottom: #fff 0.5px solid;
+  color: black;
+}
+
+.icon {
+  color: black;
 }

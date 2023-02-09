@@ -21,7 +21,6 @@ function App() {
       <Navigationbar />
       <br />
       <br />
-      <br />
       <hr />
       <div className="App">
         <div className="Sidebarr">

@@ -322,10 +322,6 @@ const Home = () => {
         alt="/"
       /> */}
 
-      <div data-aos="fade-left" data-aos-duration="1000">
-        <Customers />
-      </div>
-
       <div data-aos="zoom-in-down" data-aos-duration="1000">
         <img
           style={{ display: "flex", margin: "auto", width: "80%" }}
