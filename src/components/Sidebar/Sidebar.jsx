@@ -18,104 +18,113 @@ import AddIcCallIcon from "@mui/icons-material/AddIcCall";
 import TroubleshootIcon from "@mui/icons-material/Troubleshoot";
 import AccountTreeIcon from "@mui/icons-material/AccountTree";
 import "./Sidebar.css";
+import { useTranslation } from "react-i18next";
 
-const routes = [
-  {
-    path: "/",
-    name: "صفحه اصلی",
-    icon: <DashboardIcon />,
-  },
-  {
-    path: "/products",
-    name: "محصولات",
-    icon: <ProductionQuantityLimitsIcon />,
-    // subRoutes: [
-    //   {
-    //     path: "/products/testliner",
-    //     name: "تست لاینر  ",
-    //     icon: <FaUser />,
-    //   },
-    //   {
-    //     path: "/products/fluting",
-    //     name: "فلوتینگ ",
-    //     icon: <FaLock />,
-    //   },
-    //   {
-    //     path: "/products/liner",
-    //     name: "لاینر ",
-    //     icon: <FaMoneyBill />,
-    //   },
-    // ],
-  },
-  {
-    path: "/Commercial-Department",
-    name: "واحد بازرگانی",
-    icon: <AttachMoneyIcon />,
-    // subRoutes: [
-    //   {
-    //     path: "/Commercial-Department/Sales",
-    //     name: "فروش محصولات ",
-    //     icon: <FaUser />,
-    //   },
-    //   {
-    //     path: "/Commercial-Department/Buy",
-    //     name: "تامین آخال",
-    //     icon: <FaLock />,
-    //   },
-    //   {
-    //     path: "/Commercial-Department/supply",
-    //     name: "تامین تجهیزات",
-    //     icon: <FaMoneyBill />,
-    //   },
-    // ],
-  },
-  {
-    path: "/Qulitycontrol",
-    name: "واحد کنترل کیفیت",
-    icon: <TroubleshootIcon />,
-  },
-  // {
-  //   path: "/messages",
-  //   name: "گالری",
-  //   icon: <PhotoLibraryIcon />,
-  // },
-
-  {
-    path: "/Newline",
-    name: "خط جدید",
-    icon: <AccountTreeIcon />,
-  },
-
-  {
-    path: "/contactus",
-    name: "تماس با ما",
-    icon: <AddIcCallIcon />,
-    exact: true,
-    subRoutes: [
-      {
-        path: "/contactus/manager",
-        name: "ارتباط با مدیریت  ",
-        icon: <FaUser />,
-      },
-      // {
-      //   path: "/contactus/employment",
-      //   name: "فرم استخدام",
-      //   icon: <FaLock />,
-      // },
-      // {
-      //   path: "/contactus/call",
-      //   name: "اطلاعات تماس",
-      //   icon: <FaMoneyBill />,
-      // },
-    ],
-  },
-  {
-    path: "/Aboutus",
-    name: "درباره ما",
-    icon: <InfoIcon />,
-  },
-];
 const Sidebar = () => {
+  const { t, i18n } = useTranslation();
+
+  const changeLanguageHandler = (e) => {
+    const languageValue = e.target.value;
+    i18n.changeLanguage(languageValue);
+  };
+
+  const routes = [
+    {
+      path: "/",
+      name: `${t("home")}`,
+      icon: <DashboardIcon />,
+    },
+    {
+      path: "/products",
+      name: `${t("products")}`,
+      icon: <ProductionQuantityLimitsIcon />,
+      // subRoutes: [
+      //   {
+      //     path: "/products/testliner",
+      //     name: "تست لاینر  ",
+      //     icon: <FaUser />,
+      //   },
+      //   {
+      //     path: "/products/fluting",
+      //     name: "فلوتینگ ",
+      //     icon: <FaLock />,
+      //   },
+      //   {
+      //     path: "/products/liner",
+      //     name: "لاینر ",
+      //     icon: <FaMoneyBill />,
+      //   },
+      // ],
+    },
+    {
+      path: "/Commercial-Department",
+      name: `${t("commercial")}`,
+      icon: <AttachMoneyIcon />,
+      // subRoutes: [
+      //   {
+      //     path: "/Commercial-Department/Sales",
+      //     name: "فروش محصولات ",
+      //     icon: <FaUser />,
+      //   },
+      //   {
+      //     path: "/Commercial-Department/Buy",
+      //     name: "تامین آخال",
+      //     icon: <FaLock />,
+      //   },
+      //   {
+      //     path: "/Commercial-Department/supply",
+      //     name: "تامین تجهیزات",
+      //     icon: <FaMoneyBill />,
+      //   },
+      // ],
+    },
+    {
+      path: "/Qulitycontrol",
+      name: `${t("qc")}`,
+      icon: <TroubleshootIcon />,
+    },
+    // {
+    //   path: "/messages",
+    //   name: "گالری",
+    //   icon: <PhotoLibraryIcon />,
+    // },
+
+    {
+      path: "/Newline",
+      name: `${t("newline")}`,
+      icon: <AccountTreeIcon />,
+    },
+
+    {
+      path: "/contactus",
+      name: `${t("contactus")}`,
+      icon: <AddIcCallIcon />,
+      exact: true,
+      subRoutes: [
+        {
+          path: "/contactus/manager",
+          name: `${t("manager")}`,
+          icon: <FaUser />,
+        },
+        // {
+        //   path: "/contactus/employment",
+        //   name: "فرم استخدام",
+        //   icon: <FaLock />,
+        // },
+        // {
+        //   path: "/contactus/call",
+        //   name: "اطلاعات تماس",
+        //   icon: <FaMoneyBill />,
+        // },
+      ],
+    },
+    {
+      path: "/Aboutus",
+      name: `${t("aboutus")}`,
+      icon: <InfoIcon />,
+    },
+  ];
+
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
 

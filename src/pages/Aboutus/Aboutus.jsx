@@ -1,8 +1,16 @@
 import React from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "./Aboutus.css";
+import { useTranslation } from "react-i18next";
 
 const Aboutus = () => {
+  const { t, i18n } = useTranslation();
+
+  const changeLanguageHandler = (e) => {
+    const languageValue = e.target.value;
+    i18n.changeLanguage(languageValue);
+  };
+
   return (
     <div className="aboutus_container">
       <div class="responsive-container-block bigContainer">
@@ -13,16 +21,8 @@ const Aboutus = () => {
             </div>
           </div>
           <div class="responsive-container-block textSide">
-            <h2>درباره ما</h2>
-            <p class="text-blk subHeading">
-              در تاریخ شهریور ماه سال ۱۳۹۸ تاسیس و تحت شماره ۱۳۵۱ در اداره ثبت شرکت های استان تهران
-              به ثبت رسیده است. این شرکت در راستای برنامه پنجم توسعه کشور با هدف تامین بخشی از نیاز
-              داخلی صنعت کاغذ در ایران و کاهش وابستگی به تولیدات خارجی، با ظرفیت سالیانه 22 هزار تن
-              انواع کاغذ و مقوا در تهران قرار گرفته است که به واسطه حضور کارشناسان با تجربه و در
-              اختیار داشتن ماشین آلات روز دنیا و آزمایشگاه های پیشرفته، توانایی رقابت با کلیه کاغذ
-              های داخلی و خارجی را دارا می باشد و تلاش متخصصان این مجموعه جهت دستیابی به تولید
-              محصولات جدید و با کیفیت بالاتر همچنان ادامه دارد.
-            </p>
+            <h2> {t("aboutus")}</h2>
+            <p class="text-blk subHeading">{t("aboutustext")}</p>
             <a href="/" className="button_aboutus">
               <button class="explore">صفحه اصلی </button>
             </a>

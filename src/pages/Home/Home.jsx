@@ -7,6 +7,7 @@ import "./Home.css";
 import Customers from "./Customers";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
+import { useTranslation } from "react-i18next";
 
 // export const homeAbout = [
 //   {
@@ -104,6 +105,13 @@ export const online = [
 // };
 
 const Home = () => {
+  const { t, i18n } = useTranslation();
+
+  const changeLanguageHandler = (e) => {
+    const languageValue = e.target.value;
+    i18n.changeLanguage(languageValue);
+  };
+
   // For AOS
   useEffect(() => {
     AOS.init({
@@ -115,7 +123,8 @@ const Home = () => {
   return (
     <div className="home_container">
       <div className="home_title">
-        <h3>کاغذسازی مهرآیین پارس</h3>
+        {/* <h3>کاغذسازی مهرآیین پارس</h3> */}
+        <h3> {t("name")} </h3>
       </div>
       {/* <div className="video_top">
         <video loop autoPlay>
@@ -150,7 +159,9 @@ const Home = () => {
           <div class="carousel-item active">
             <img src="./images/homeimg1.png" class="d-block w-100" alt="..." />
             <div class="carousel-caption d-none d-md-block">
-              <h5>کاغذسازی مهرآیین پارس</h5>
+              <h3 data-aos-duration="1500" data-aos="fade-right" data-aos-once="false">
+                {t("name")}
+              </h3>
               {/* <p>Some representative placeholder content for the first slide.</p> */}
             </div>
           </div>

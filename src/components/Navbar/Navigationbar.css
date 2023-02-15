@@ -1,40 +1,34 @@
 nav {
   position: fixed;
   width: 100%;
-  /* height: 10rem; */
   z-index: 1;
   backdrop-filter: blur(5.5px);
 }
 
 .navbar_container {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
-  align-content: center;
   align-items: center;
-  /* background-color: bisque; */
-  padding-top: 0.5rem;
+  text-align: center;
+  height: 6rem;
 }
 
 .left_navbar {
-  /* background-color: brown; */
   display: flex;
   gap: 2rem;
   padding-left: 5rem;
 }
+.left_navbar img {
+  width: 48px;
+  height: auto;
+  border-radius: 10px;
+}
 
 .right_navbar {
-  /* background-color: aqua; */
   display: flex;
   padding-right: 1rem;
 }
 
 .right_navbar h2 {
   padding-right: 1rem;
-}
-
-.right_navbar img {
-  width: 48px;
-  height: auto;
-  border-radius: 10px;
 }
