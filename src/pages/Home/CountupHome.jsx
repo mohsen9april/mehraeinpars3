@@ -1,13 +1,16 @@
 import React from "react";
 import CountUp from "react-countup";
 import "./CountupHome.css";
+import { useTranslation } from "react-i18next";
 
 const CountupHome = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="ProductsCountUp">
       <di className="CountUpBox">
         <img src="./images/products.png" alt="/" />
-        <h2> تنوع محصولات</h2>
+        <h2> {t("productvariety")}</h2>
         <CountUp
           start={0}
           end={12}
@@ -25,7 +28,7 @@ const CountupHome = () => {
       </di>
       <di className="CountUpBox">
         <img src="./images/employees.png" alt="/" />
-        <h2> پرسنل </h2>
+        <h2> {t("employee")}</h2>
         <CountUp
           start={0}
           end={186}
@@ -43,7 +46,7 @@ const CountupHome = () => {
       </di>
       <di className="CountUpBox">
         <img src="./images/package.png" alt="/" />
-        <h2> ظرفیت تولید سالیانه </h2>
+        <h2> {t("productioncapacity")} </h2>
         <CountUp
           start={0}
           end={22000000}

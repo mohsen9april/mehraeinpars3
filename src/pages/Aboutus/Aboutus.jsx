@@ -4,12 +4,7 @@ import "./Aboutus.css";
 import { useTranslation } from "react-i18next";
 
 const Aboutus = () => {
-  const { t, i18n } = useTranslation();
-
-  const changeLanguageHandler = (e) => {
-    const languageValue = e.target.value;
-    i18n.changeLanguage(languageValue);
-  };
+  const { t } = useTranslation();
 
   return (
     <div className="aboutus_container">
@@ -23,9 +18,9 @@ const Aboutus = () => {
           <div class="responsive-container-block textSide">
             <h2> {t("aboutus")}</h2>
             <p class="text-blk subHeading">{t("aboutustext")}</p>
-            <a href="/" className="button_aboutus">
+            {/* <a href="/" className="button_aboutus">
               <button class="explore">صفحه اصلی </button>
-            </a>
+            </a> */}
           </div>
         </div>
       </div>
