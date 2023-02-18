@@ -23,64 +23,64 @@ const Home = () => {
   const { t } = useTranslation();
 
   const online = [
-    {
-      cover: "./images/courses/online/o1.png",
-      hoverCover: "./images/courses/online/o1.1.png",
-      courseName: `${t("pulper")}`,
-      course: "+۵",
-    },
-    {
-      cover: "./images/courses/online/o2.png",
-      hoverCover: "./images/courses/online/o2.1.png",
-      courseName: "انبار آخال",
-      course: "25 Courses",
-    },
+    // {
+    //   cover: "./images/courses/online/o1.png",
+    //   hoverCover: "./images/courses/online/o1.1.png",
+    //   courseName: `${t("pulper")}`,
+    //   course: "+۵",
+    // },
+    // {
+    //   cover: "./images/courses/online/o2.png",
+    //   hoverCover: "./images/courses/online/o2.1.png",
+    //   courseName: "انبار آخال",
+    //   course: "25 Courses",
+    // },
     {
       cover: "./images/courses/online/o3.png",
       hoverCover: "./images/courses/online/o3.1.png",
-      courseName: "واحد کنترل کیفیت",
+      courseName: `${t("qc")}`,
       course: "10 Courses",
     },
     {
       cover: "./images/courses/online/o4.png",
       hoverCover: "./images/courses/online/o4.1.png",
-      courseName: "واحد فنی و مهندسی",
+      courseName: `${t("teu")}`,
       course: "15 Courses",
     },
     {
       cover: "./images/courses/online/o5.png",
       hoverCover: "./images/courses/online/o5.1.png",
-      courseName: "تصفیه خانه",
+      courseName: `${t("etp")}`,
       course: "30 Courses",
     },
     {
       cover: "./images/courses/online/o6.png",
       hoverCover: "./images/courses/online/o6.1.png",
-      courseName: "خط تولید",
+      courseName: `${t("pl")}`,
       course: "60 Courses",
     },
     {
       cover: "./images/courses/online/o7.png",
       hoverCover: "./images/courses/online/o7.1.png",
-      courseName: "انبار تجهیزات",
+      courseName: `${t("warehouse")}`,
       course: "10 Courses",
     },
     {
       cover: "./images/courses/online/o8.png",
       hoverCover: "./images/courses/online/o8.1.png",
-      courseName: "واحد بازرگانی",
+      courseName: `${t("businessunit")}`,
       course: "30 Courses",
     },
     {
       cover: "./images/courses/online/o9.png",
       hoverCover: "./images/courses/online/o9.1.png",
-      courseName: "واحد برنامه ریزی و تولید",
+      courseName: `${t("ppu")}`,
       course: "80 Courses",
     },
     {
       cover: "./images/courses/online/o10.png",
       hoverCover: "./images/courses/online/o10.1.png",
-      courseName: "واحد عمران",
+      courseName: `${t("financialunit")}`,
       course: "120 Courses",
     },
   ];

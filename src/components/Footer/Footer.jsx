@@ -5,26 +5,22 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
 import "./Footer.css";
+import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="footer_container">
       <div>
         <footer>
           <div class="footer_container">
             <div class="sec about">
-              <h2>درباره ما</h2>
-              <h3 className="footer_right_h3">
-                شرکت کاغذسازی
-                <span>
-                  <strong> مهرآیین پارس </strong>
-                </span>
-              </h3>
+              <h2>{t("aboutus")}</h2>
+              <h3 className="footer_right_h3">{t("name")}</h3>
               <br />
-              <p>
-                تولید کننده انواع کاغذ و مقوا و كاغذ كارتن، كاغذ فلوتينگ ، تست لاینر کاغذ تست لاینر
-                گراماژ 130 عرض 200-250 کاغذ تاپ فلوت گراماژ 130 عرض 200-250
-              </p>
+              <p> {t("description")}</p>
               <br />
 
               <ul class="some socialMedia">
@@ -56,37 +52,41 @@ const Footer = () => {
               </ul>
             </div>
             <div class="sec quickLinks">
-              <h2>پیوند ها </h2>
+              <h2>{t("links")} </h2>
               <ul>
                 <li>
-                  <a href="/">صفحه اصلی</a>
+                  <a href="/">{t("home")} </a>
+                  {/* <Link to="/"> {t("home")}</Link> */}
                 </li>
                 <li>
-                  <a href="/products">محصولات</a>
+                  {/* <a href="/products">{t("products")}</a> */}
+                  <Link to="/products"> {t("products")}</Link>
                 </li>
                 <li>
-                  <a href="/Newline">خط جدید </a>
+                  {/* <a href="/Newline">{t("newline")} </a> */}
+                  <Link to="/Newline"> {t("newline")}</Link>
                 </li>
                 <li>
-                  <a href="/Aboutus">درباره ما</a>
+                  {/* <a href="/Aboutus">{t("aboutus")} </a> */}
+                  <Link to="/Aboutus"> {t("aboutus")}</Link>
                 </li>
               </ul>
             </div>
 
             <div class="sec contact">
-              <h2>اطلاعات تماس</h2>
+              <h2>{t("contactus")}</h2>
               <ul class="info">
                 <div class="footer-center">
                   <div>
                     <i class="fa fa-map-marker"></i>
-                    <span>ایران</span>
+                    <span>{t("iran")}</span>
                     <br />
-                    <p>تهران کیلومتر ۲۰ جاده قدیم تهران قم روبروی مهدی آباد خیابان بعثت پلاک ۸</p>
+                    <p>{t("address")} </p>
                   </div>
 
                   <div>
                     <i class="fa fa-phone"></i>
-                    <p>+۲۱ ۵۶۵۴ - ۶۶ ۲۰</p>
+                    <p>{t("phone")}</p>
                   </div>
                   <div>
                     <i class="fa fa-envelope"></i>

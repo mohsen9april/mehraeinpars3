@@ -1,5 +1,5 @@
 {
-  "name": "Mehraeinpars Paper Mill Co.",
+  "name": "Mehraeinpars Paper Mill",
   "home": "Home",
   "products": "Products",
   "commercial": "Business unit",
@@ -19,7 +19,18 @@
   "flutingtext": "Floating paper or Congress paper is called thick and wavy paper that is used as a middle layer in carton making. The primary pulp of this paper is obtained from agricultural waste, non-wood fibers, wood pulp, waste, recycled paper, etc. By drying this pulp through a special process, floating paper is obtained",
   "linertext": "Floating paper or Congress paper is called thick and wavy paper that is used as a middle layer in carton making. The primary pulp of this paper is obtained from agricultural waste, non-wood fibers, wood pulp, waste, recycled paper, etc. By drying this pulp through a special process, floating paper is obtained",
   "testlinertext": "Testliner paper is produced entirely from recycled fibers, but in its production process, additives such as starch (in the form of starch on one side or both sides of the paper) and sizing materials are used only on one side of the paper, and other additives are used for filling as well as color.",
-  "ourresponsibility": "Our path to environmental responsibility",
+  "ourresponsibility": "Environmental responsibility",
   "ourdepartments": "Our Departments",
-  "pulper": "Pulper "
+  "etp": "Effluent Treatment Plant",
+  "teu": "Technical & Engineering Unit ",
+  "pl": "Production Line",
+  "warehouse": "Warehouse",
+  "businessunit": "Business unit",
+  "ppu": "Production Planning Unit",
+  "financialunit": "Financial Unit",
+  "links": " Links ",
+  "iran": " Iran ",
+  "address": " No.8 Besat alley , in front of Mahdiabad , 20Km of Tehran - Qom old reoad ",
+  "phone": " (98)21 5654 66-20 ",
+  "description": "MehraeinPars uses the latest advanced technologies to meet the global quality standards in various processes and infrastructure"
 }

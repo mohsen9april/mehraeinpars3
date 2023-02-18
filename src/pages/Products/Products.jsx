@@ -2,8 +2,11 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./Products.css";
+import { useTranslation } from "react-i18next";
 
 const Products = () => {
+  const { t } = useTranslation();
+
   // For AOS
   useEffect(() => {
     AOS.init({
@@ -96,7 +99,7 @@ const Products = () => {
       </section>
       {/* Fluting */}
       <section>
-        <h2 className="products_header">کاغذ فلوتینگ</h2>
+        <h2 className="products_header"> {t("fluting")}</h2>
         <div className="testline_container">
           <div data-aos-duration="1000" data-aos="slide-up" className="testliner_left">
             <img src="./images/fluting.jpg" alt="/" />
