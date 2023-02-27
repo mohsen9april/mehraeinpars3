@@ -19,7 +19,7 @@ nav {
   padding-left: 5rem;
 }
 .left_navbar img {
-  width: 48px;
+  width: 78px;
   height: auto;
   border-radius: 10px;
 }
@@ -31,4 +31,10 @@ nav {
 
 .right_navbar h2 {
   padding-right: 1rem;
+}
+
+.languagebtn {
+  display: flex;
+  gap: 0.5rem;
+  width: 8rem;
 }

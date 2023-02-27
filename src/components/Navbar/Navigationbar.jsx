@@ -6,6 +6,9 @@ import DarkModeIcon from "@mui/icons-material/DarkMode";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import EmailIcon from "@mui/icons-material/Email";
 import { useTranslation } from "react-i18next";
+import Flag from "react-flagkit";
+
+const flagsize = 35;
 
 const Navigationbar = () => {
   const { t, i18n } = useTranslation();
@@ -21,7 +24,7 @@ const Navigationbar = () => {
   const listenScrollEvent = () => {
     window.scrollY > 10 ? setnavColor("#252734") : setnavColor("transparent");
     window.scrollY > 10 ? setnavLinkColor("#ffffff") : setnavLinkColor("#000000");
-    window.scrollY > 10 ? setnavSize("5rem") : setnavSize("4rem");
+    window.scrollY > 10 ? setnavSize("6rem") : setnavSize("4rem");
   };
   useEffect(() => {
     window.addEventListener("scroll", listenScrollEvent);
@@ -47,18 +50,47 @@ const Navigationbar = () => {
             {/* <DarkModeIcon /> */}
             {/* <AccountCircleIcon /> */}
             {/* <EmailIcon /> */}
-            <PublicIcon />
+            {/* <PublicIcon /> */}
             {/* Select box to change language */}
-            <select
+
+            {/* <select
               className="custom-select"
               style={{ width: 200 }}
               onChange={changeLanguageHandler}
             >
               <option value="fa">فارسی</option>
               <option value="en">English</option>
-            </select>
+            </select> */}
             {/* call name of the variable from  the translation.json file to t() method */}
             {/* <h1>{t("name")}</h1> */}
+
+            <div className="languagebtn">
+              <Flag
+                className="languagebtnflag"
+                country="GB"
+                role="button"
+                size={flagsize}
+                onClick={() => {
+                  changeLanguageHandler();
+                }}
+              />
+              <Flag
+                country="IR"
+                role="button"
+                size={flagsize}
+                onClick={() => {
+                  alert("You just clicked on the flag.");
+                }}
+              />
+              <Flag
+                country="CN"
+                role="button"
+                size={flagsize}
+                onClick={() => {
+                  alert("You just clicked on the flag.");
+                }}
+              />
+            </div>
           </div>
           <div className="right_navbar">
             <h2> {t("name")} </h2>
