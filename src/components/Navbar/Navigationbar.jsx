@@ -13,9 +13,8 @@ const flagsize = 35;
 const Navigationbar = () => {
   const { t, i18n } = useTranslation();
 
-  const changeLanguageHandler = (e) => {
-    const languageValue = e.target.value;
-    i18n.changeLanguage(languageValue);
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
   };
 
   const [navSize, setnavSize] = useState("45px");
@@ -51,35 +50,21 @@ const Navigationbar = () => {
             {/* <AccountCircleIcon /> */}
             {/* <EmailIcon /> */}
             {/* <PublicIcon /> */}
-            {/* Select box to change language */}
-
-            {/* <select
-              className="custom-select"
-              style={{ width: 200 }}
-              onChange={changeLanguageHandler}
-            >
-              <option value="fa">فارسی</option>
-              <option value="en">English</option>
-            </select> */}
-            {/* call name of the variable from  the translation.json file to t() method */}
-            {/* <h1>{t("name")}</h1> */}
 
             <div className="languagebtn">
               <Flag
-                className="languagebtnflag"
                 country="GB"
                 role="button"
-                size={flagsize}
                 onClick={() => {
-                  changeLanguageHandler();
+                  changeLanguage("en");
                 }}
               />
+
               <Flag
                 country="IR"
                 role="button"
-                size={flagsize}
                 onClick={() => {
-                  alert("You just clicked on the flag.");
+                  changeLanguage("fa");
                 }}
               />
               <Flag
@@ -87,14 +72,13 @@ const Navigationbar = () => {
                 role="button"
                 size={flagsize}
                 onClick={() => {
-                  alert("You just clicked on the flag.");
+                  alert("coming soon!");
                 }}
               />
             </div>
           </div>
           <div className="right_navbar">
             <h2> {t("name")} </h2>
-            {/* <img src="./images/logo.png" alt="/" /> */}
           </div>
         </div>
       </nav>
