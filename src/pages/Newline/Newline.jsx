@@ -17,7 +17,7 @@ const Newline = () => {
           <h1>پروژه خط جدید</h1>
         </div>
         <div className="timeline_top">
-          <video loop autoPlay>
+          <video muted loop playsInline controls>
             <source src="./images/video1.mp4" type="video/mp4" />
           </video>
         </div>

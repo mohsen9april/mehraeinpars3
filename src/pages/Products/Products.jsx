@@ -20,7 +20,7 @@ const Products = () => {
         <h3>محصولات کاغذسازی مهرآیین پارس</h3>
       </div>
       <div className="video_products">
-        <video loop autoPlay>
+        <video muted loop playsInline controls>
           <source src="./images/products.mp4" type="video/mp4" />
         </video>
       </div>

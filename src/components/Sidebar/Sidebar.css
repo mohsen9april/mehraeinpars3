@@ -43,14 +43,15 @@
 .link:hover {
   border-radius: 0.5rem;
   /* background: rgb(206, 213, 251); */
-  background-color: #1eb2a6;
+  background-color: #e8cdb2;
   transition: 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
 }
 
 .active {
   border-radius: 0.5rem;
   /* background: rgb(206, 213, 251); */
-  background-color: #1eb2a6;
+  /* background-color: #1eb2a6; */
+  background-color: #cc9d69;
 }
 .link_text {
   white-space: nowrap;

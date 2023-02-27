@@ -21,7 +21,7 @@ const Navigationbar = () => {
   const [navColor, setnavColor] = useState("transparent");
   const [navLinkColor, setnavLinkColor] = useState("#000000");
   const listenScrollEvent = () => {
-    window.scrollY > 10 ? setnavColor("#252734") : setnavColor("transparent");
+    window.scrollY > 10 ? setnavColor("#cc9d69") : setnavColor("transparent");
     window.scrollY > 10 ? setnavLinkColor("#ffffff") : setnavLinkColor("#000000");
     window.scrollY > 10 ? setnavSize("6rem") : setnavSize("4rem");
   };
