@@ -9,33 +9,10 @@ import "bootstrap/dist/js/bootstrap.bundle.min";
 import { useTranslation } from "react-i18next";
 import { Carousel } from "react-bootstrap";
 
-// const Heading = ({ subtitle, title }) => {
-//   return (
-//     <>
-//       <div id="heading">
-//         <h3>{subtitle} </h3>
-//         <h1>{title} </h1>
-//       </div>
-//     </>
-//   );
-// };
-
 const Home = () => {
   const { t } = useTranslation();
 
   const online = [
-    // {
-    //   cover: "./images/courses/online/o1.png",
-    //   hoverCover: "./images/courses/online/o1.1.png",
-    //   courseName: `${t("pulper")}`,
-    //   course: "+۵",
-    // },
-    // {
-    //   cover: "./images/courses/online/o2.png",
-    //   hoverCover: "./images/courses/online/o2.1.png",
-    //   courseName: "انبار آخال",
-    //   course: "25 Courses",
-    // },
     {
       cover: "./images/courses/online/o3.png",
       hoverCover: "./images/courses/online/o3.1.png",
@@ -88,45 +65,46 @@ const Home = () => {
 
   // For AOS
   useEffect(() => {
-    AOS.init({
-      // delay: 200,
-      // throttleDelay: 99,
-    });
+    AOS.init({});
   }, []);
 
   return (
     <div className="home_container">
       <div className="home_title">
-        {/* <h3>کاغذسازی مهرآیین پارس</h3> */}
-        <h3> {t("name")} </h3>
+        <h3 style={{ fontSize: "3.5vw", fontWeight: "bold" }}> {t("name")} </h3>
       </div>
 
       <Carousel>
-        <Carousel.Item interval={1500}>
+        <Carousel.Item interval={2000}>
           <img className="d-block w-100" src="./images/homeimg1.png" alt="First slide" />
           <Carousel.Caption>
-            <h3 data-aos-duration="1500" data-aos="fade-right" data-aos-once="false">
+            <h3
+              style={{ fontSize: "2.5vw", fontWeight: "bold" }}
+              data-aos-duration="1500"
+              data-aos="fade-right"
+              data-aos-once="false"
+            >
               {t("name")}
             </h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            {/* <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> */}
           </Carousel.Caption>
         </Carousel.Item>
-        <Carousel.Item interval={1500}>
+        <Carousel.Item interval={2000}>
           <img className="d-block w-100" src="./images/homeimg2.jpg" alt="Second slide" />
           <Carousel.Caption>
             <h3 data-aos-duration="1500" data-aos="fade-right" data-aos-once="false">
               {t("name")}
             </h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> */}
           </Carousel.Caption>
         </Carousel.Item>
-        <Carousel.Item interval={1500}>
+        <Carousel.Item interval={2000}>
           <img className="d-block w-100" src="./images/homeimg3.jpg" alt="Third slide" />
           <Carousel.Caption>
             <h3 data-aos-duration="1500" data-aos="fade-right" data-aos-once="false">
               {t("name")}
             </h3>
-            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+            {/* <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p> */}
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
@@ -152,16 +130,7 @@ const Home = () => {
       <br />
       <br />
 
-      <div
-      // data-aos="fade-up"
-      // data-aos-offset="100"
-      // data-aos-delay="30"
-      // data-aos-duration="500"
-      // data-aos-easing="ease-in-out"
-      // data-aos-mirror="true"
-      // data-aos-once="false"
-      // data-aos-anchor-placement="top-center"
-      >
+      <div>
         <section data-aos="zoom-in-down" data-aos-duration="1000" className="online">
           <div className="container">
             {/* <Heading subtitle="WORK SHOP " title="" /> */}

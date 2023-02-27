@@ -8,7 +8,9 @@ const ProductsHome = () => {
   return (
     <div>
       <section className="products_home_container" id="speciality">
-        <h1 class="heading_Products">{t("mehraeinParsproducts")}</h1>
+        <h1 style={{ fontSize: "3.5vw", fontWeight: "bold" }} class="heading_Products">
+          {t("mehraeinParsproducts")}
+        </h1>
         <div class="box-container">
           <div class="box">
             <img className="image" src="./images/fluting.jpg" alt="" />
