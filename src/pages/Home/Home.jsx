@@ -7,6 +7,7 @@ import "./Home.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import { useTranslation } from "react-i18next";
+import { Carousel } from "react-bootstrap";
 
 // const Heading = ({ subtitle, title }) => {
 //   return (
@@ -100,86 +101,38 @@ const Home = () => {
         <h3> {t("name")} </h3>
       </div>
 
-      <div id="carouselExampleCaptions" class="carousel slide">
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="./images/homeimg1.png" class="d-block w-100" alt="..." />
-            <div class="carousel-caption d-none d-md-block">
-              <h3 data-aos-duration="1500" data-aos="fade-right" data-aos-once="false">
-                {t("name")}
-              </h3>
-              {/* <p>Some representative placeholder content for the first slide.</p> */}
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="./images/homeimg2.jpg" class="d-block w-100" alt="..." />
-            <div class="carousel-caption d-none d-md-block">
-              {/* <h5>انبار صادرات</h5> */}
-              {/* <p>Some representative placeholder content for the second slide.</p> */}
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="./images/homeimg3.jpg" class="d-block w-100" alt="..." />
-            <div class="carousel-caption d-none d-md-block">
-              {/* <h5>خط تولید</h5> */}
-              {/* <p>Some representative placeholder content for the third slide.</p> */}
-            </div>
-          </div>
-        </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
+      <Carousel>
+        <Carousel.Item interval={1500}>
+          <img className="d-block w-100" src="./images/homeimg1.png" alt="First slide" />
+          <Carousel.Caption>
+            <h3 data-aos-duration="1500" data-aos="fade-right" data-aos-once="false">
+              {t("name")}
+            </h3>
+            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item interval={1500}>
+          <img className="d-block w-100" src="./images/homeimg2.jpg" alt="Second slide" />
+          <Carousel.Caption>
+            <h3 data-aos-duration="1500" data-aos="fade-right" data-aos-once="false">
+              {t("name")}
+            </h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item interval={1500}>
+          <img className="d-block w-100" src="./images/homeimg3.jpg" alt="Third slide" />
+          <Carousel.Caption>
+            <h3 data-aos-duration="1500" data-aos="fade-right" data-aos-once="false">
+              {t("name")}
+            </h3>
+            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+      </Carousel>
 
       <br />
-      <div
-        data-aos-duration="1000"
-        data-aos="fade-up"
-        // data-aos-offset="50"
-        // data-aos-delay="30"
-        // data-aos-duration="500"
-        // data-aos-easing="ease-in-out"
-        // data-aos-mirror="true"
-        // data-aos-once="false"
-        // data-aos-anchor-placement="top-center"
-      >
+      <div data-aos-duration="1000" data-aos="fade-up">
         <CountupHome />
       </div>
       <br />

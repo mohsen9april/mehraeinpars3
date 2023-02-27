@@ -17,6 +17,7 @@
     "i18next-xhr-backend": "^3.2.2",
     "lazyimage": "^2.1.2",
     "react": "^18.2.0",
+    "react-bootstrap": "^2.7.2",
     "react-countup": "^6.4.0",
     "react-dom": "^18.2.0",
     "react-flagkit": "^2.0.4",

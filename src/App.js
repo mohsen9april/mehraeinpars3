@@ -11,6 +11,8 @@ import Products from "./pages/Products/Products";
 import CommercialDepartment from "./pages/CommercialDepartment/CommercialDepartment";
 import ContactusManager from "./pages/ContactUs/ContactusManager/ContactusManager";
 import ContactusEmployment from "./pages/ContactUs/ContactusEmployment/ContactusEmployment";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min";
 
 function App() {
   return (
