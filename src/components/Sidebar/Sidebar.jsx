@@ -38,45 +38,11 @@ const Sidebar = () => {
       path: "/products",
       name: `${t("products")}`,
       icon: <ProductionQuantityLimitsIcon />,
-      // subRoutes: [
-      //   {
-      //     path: "/products/testliner",
-      //     name: "تست لاینر  ",
-      //     icon: <FaUser />,
-      //   },
-      //   {
-      //     path: "/products/fluting",
-      //     name: "فلوتینگ ",
-      //     icon: <FaLock />,
-      //   },
-      //   {
-      //     path: "/products/liner",
-      //     name: "لاینر ",
-      //     icon: <FaMoneyBill />,
-      //   },
-      // ],
     },
     {
       path: "/Commercial-Department",
       name: `${t("commercial")}`,
       icon: <AttachMoneyIcon />,
-      // subRoutes: [
-      //   {
-      //     path: "/Commercial-Department/Sales",
-      //     name: "فروش محصولات ",
-      //     icon: <FaUser />,
-      //   },
-      //   {
-      //     path: "/Commercial-Department/Buy",
-      //     name: "تامین آخال",
-      //     icon: <FaLock />,
-      //   },
-      //   {
-      //     path: "/Commercial-Department/supply",
-      //     name: "تامین تجهیزات",
-      //     icon: <FaMoneyBill />,
-      //   },
-      // ],
     },
     {
       path: "/Qulitycontrol",
@@ -126,7 +92,6 @@ const Sidebar = () => {
   ];
 
   const [isOpen, setIsOpen] = useState(false);
-  const toggle = () => setIsOpen(!isOpen);
 
   const showAnimation = {
     hidden: {
@@ -146,11 +111,13 @@ const Sidebar = () => {
   };
 
   const handleMouseEnter = () => {
-    toggle();
+    // toggle();
+    setIsOpen(!isOpen);
   };
 
   const handleMouseLeave = () => {
-    toggle();
+    // toggle();
+    setIsOpen(!isOpen);
   };
 
   return (
@@ -164,7 +131,7 @@ const Sidebar = () => {
           animate={{
             width: isOpen ? "170px" : "52px",
             transition: {
-              duration: 0.5,
+              // duration: 0.5,
               type: "spring",
               damping: 10,
             },

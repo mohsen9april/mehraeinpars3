@@ -74,7 +74,7 @@ const Home = () => {
         <h3 style={{ fontSize: "3.5vw", fontWeight: "bold" }}> {t("name")} </h3>
       </div>
 
-      <Carousel>
+      <Carousel className="home_carousel">
         <Carousel.Item interval={2000}>
           <img className="d-block w-100" src="./images/homeimg1.png" alt="First slide" />
           <Carousel.Caption>

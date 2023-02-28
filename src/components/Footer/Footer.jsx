@@ -25,7 +25,11 @@ const Footer = () => {
 
               <ul class="some socialMedia">
                 <li>
-                  <a href="/">
+                  <a
+                    href="https://www.instagram.com/mehraeinpars/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <InstagramIcon />
                   </a>
                 </li>
@@ -45,7 +49,7 @@ const Footer = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="/">
+                  <a href="mailto:contact@mehraeinpars.com">
                     <EmailIcon />
                   </a>
                 </li>
@@ -55,19 +59,15 @@ const Footer = () => {
               <h2>{t("links")} </h2>
               <ul>
                 <li>
-                  <a href="/">{t("home")} </a>
-                  {/* <Link to="/"> {t("home")}</Link> */}
+                  <Link to="/"> {t("home")}</Link>
                 </li>
                 <li>
-                  {/* <a href="/products">{t("products")}</a> */}
                   <Link to="/products"> {t("products")}</Link>
                 </li>
                 <li>
-                  {/* <a href="/Newline">{t("newline")} </a> */}
                   <Link to="/Newline"> {t("newline")}</Link>
                 </li>
                 <li>
-                  {/* <a href="/Aboutus">{t("aboutus")} </a> */}
                   <Link to="/Aboutus"> {t("aboutus")}</Link>
                 </li>
               </ul>

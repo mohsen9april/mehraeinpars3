@@ -2,7 +2,7 @@
   /* background-color: yellowgreen; */
   display: flex;
   justify-content: center;
-  width: 90%;
+  width: 97%;
   gap: 1rem;
   padding: 1rem 2rem;
   text-align: center;
@@ -24,6 +24,6 @@
 }
 
 .CountUpBox img {
-  width: 86px;
+  width: calc(30% - 3px);
   height: auto;
 }

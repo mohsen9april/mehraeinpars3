@@ -1,14 +1,11 @@
 .sidebar_container {
   display: flex;
-  /* align-items: center; */
-  /* padding-top: 0.5rem; */
   padding-right: 0.2rem;
   position: fixed;
-  z-index: 999;
-  line-height: 2.1;
-  /* background-color: yellow; */
+  z-index: 9999;
+  line-height: 2.4;
   margin-right: 0.3rem;
-  height: auto;
+  /* height: auto; */
 }
 
 .sidebar_container:hover {
@@ -69,6 +66,7 @@
   transition: 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
   justify-content: space-between;
   color: black;
+  z-index: 9999;
 }
 .menu_item {
   display: flex;
@@ -81,7 +79,6 @@
 }
 .menu_container .link {
   padding-left: 20px;
-  border-bottom: #fff 0.5px solid;
   color: black;
 }
 

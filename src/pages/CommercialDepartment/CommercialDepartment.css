@@ -1,15 +1,24 @@
+.commercialdepartment_container {
+  /* background-color: aqua; */
+  width: 98%;
+  margin: auto;
+}
+
 .cd_Header {
   display: flex;
   position: relative;
   text-align: center;
   align-items: center;
   padding-top: 1rem;
+  width: 95%;
+  margin: auto;
 }
 
 .cd_Header img {
   display: flex;
   margin: auto;
   width: 100%;
+  border-radius: 40px;
 }
 
 .centered {

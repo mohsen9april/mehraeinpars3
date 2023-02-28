@@ -21,9 +21,9 @@ const Navigationbar = () => {
   const [navColor, setnavColor] = useState("transparent");
   const [navLinkColor, setnavLinkColor] = useState("#000000");
   const listenScrollEvent = () => {
-    window.scrollY > 10 ? setnavColor("#cc9d69") : setnavColor("transparent");
-    window.scrollY > 10 ? setnavLinkColor("#ffffff") : setnavLinkColor("#000000");
-    window.scrollY > 10 ? setnavSize("6rem") : setnavSize("4rem");
+    window.scrollY > 10 ? setnavColor("rgba(204, 157, 105, 0.94)") : setnavColor("transparent");
+    window.scrollY > 10 ? setnavLinkColor("#000000") : setnavLinkColor("#000000");
+    window.scrollY > 10 ? setnavSize("5.5rem") : setnavSize("3rem");
   };
   useEffect(() => {
     window.addEventListener("scroll", listenScrollEvent);
@@ -53,7 +53,7 @@ const Navigationbar = () => {
 
             <div className="languagebtn">
               <Flag
-                style={{ width: "48px" }}
+                style={{ width: "36px" }}
                 country="GB"
                 role="button"
                 onClick={() => {
@@ -62,7 +62,7 @@ const Navigationbar = () => {
               />
 
               <Flag
-                style={{ width: "48px" }}
+                style={{ width: "36px" }}
                 country="IR"
                 role="button"
                 onClick={() => {
@@ -70,7 +70,7 @@ const Navigationbar = () => {
                 }}
               />
               <Flag
-                style={{ width: "48px" }}
+                style={{ width: "36px" }}
                 country="CN"
                 role="button"
                 size={flagsize}

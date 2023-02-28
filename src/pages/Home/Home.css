@@ -9,6 +9,12 @@
   color: black;
 }
 
+.home_carousel {
+  margin: auto;
+  width: calc(95% - 10px);
+  padding-top: 1rem;
+}
+
 .home_ourway {
   /* background-color: yellowgreen; */
 }
@@ -19,7 +25,7 @@
 .home_ourway img {
   display: flex;
   width: 90%;
-  height: 40vh;
+  height: auto;
   margin: auto;
   border-radius: 20px;
 }
