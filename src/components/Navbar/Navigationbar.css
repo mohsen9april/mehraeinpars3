@@ -16,7 +16,7 @@ nav {
 .left_navbar {
   display: flex;
   gap: 2rem;
-  padding-left: 5rem;
+  padding-left: 2rem;
 }
 .left_navbar img {
   width: 78px;
@@ -31,10 +31,11 @@ nav {
 
 .right_navbar h2 {
   padding-right: 1rem;
+  font-size: 2.5vw;
 }
 
 .languagebtn {
   display: flex;
-  gap: 0.5rem;
-  width: 9rem;
+  gap: 1rem;
+  /* background-color: blue; */
 }

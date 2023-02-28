@@ -43,9 +43,9 @@ const Navigationbar = () => {
       >
         <div className="navbar_container">
           <div className="left_navbar">
-            <a>
+            <div>
               <img src="./images/logo.png" alt="/" />
-            </a>
+            </div>
             {/* <DarkModeIcon /> */}
             {/* <AccountCircleIcon /> */}
             {/* <EmailIcon /> */}
@@ -53,6 +53,7 @@ const Navigationbar = () => {
 
             <div className="languagebtn">
               <Flag
+                style={{ width: "48px" }}
                 country="GB"
                 role="button"
                 onClick={() => {
@@ -61,6 +62,7 @@ const Navigationbar = () => {
               />
 
               <Flag
+                style={{ width: "48px" }}
                 country="IR"
                 role="button"
                 onClick={() => {
@@ -68,6 +70,7 @@ const Navigationbar = () => {
                 }}
               />
               <Flag
+                style={{ width: "48px" }}
                 country="CN"
                 role="button"
                 size={flagsize}
